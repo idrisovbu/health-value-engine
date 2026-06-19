@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0335)https://0e838931-90ef-48a8-bbc2-f091f4e7fc82.claudeusercontent.com/v1/design/projects/0e838931-90ef-48a8-bbc2-f091f4e7fc82/serve/Health%20Value%20Engine-print-156xyrq.dc.html?t=38067d973a43394273fd1072b66aac2b72af23926094256e0484728ba38163d5.b4626cef-dec7-42b7-b762-57d41ec53404.ced4c017-c732-40f8-bd26-1483f9676b61.1781846950&direct=1 -->
+<html class="hentry" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .sc-placeholder{background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder,
+    html.sc-dc-streaming .sc-interp.sc-missing{position:relative;
+      background:color-mix(in srgb,currentColor 5%,transparent);
+      border-color:transparent}
+    html.sc-dc-streaming .sc-placeholder::before,
+    html.sc-dc-streaming .sc-interp.sc-missing::before{content:'';
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(90deg,rgba(217,119,87,0) 25%,rgba(247,225,211,.95) 37%,rgba(217,119,87,0) 63%);
+      background-size:400% 100%;animation:sc-shine 1.4s ease infinite}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder)::before,
+    html.sc-dc-streaming .sc-interp.sc-missing:nth-child(n+9 of .sc-interp.sc-missing)::before{animation:none;
+      background:color-mix(in srgb,currentColor 8%,transparent)}
+    .sc-placeholder-error{padding:4px 8px;font:11px/1.4 ui-monospace,monospace;
+      color:rgba(0,0,0,.7);word-break:break-word}
+    .sc-interp.sc-missing{display:inline-block;width:2em;height:1em;overflow:hidden;
+      vertical-align:text-bottom;background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;color:transparent;
+      user-select:none}
+    .sc-interp.sc-unresolved{font-family:ui-monospace,monospace;font-size:.85em;
+      color:rgba(0,0,0,.5);background:rgba(0,0,0,.05);border-radius:3px;
+      padding:0 3px}
+    .sc-host.sc-has-error{position:relative}
+    .sc-logic-error{position:absolute;top:8px;left:8px;z-index:2147483647;max-width:60ch;
+      padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace;
+      border-radius:4px;white-space:pre-wrap;pointer-events:none}
+    /* Mirrors PRINT_BASELINE_CSS in apps/web deck-stage-export.ts — keep both
+       in sync until dc-runtime regains a build step. */
+    @media print {
+      @page { margin: 0.5cm; }
+      section, article, figure, table { break-inside: avoid; }
+      *, *::before, *::after {
+        print-color-adjust: exact; -webkit-print-color-adjust: exact;
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+        animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important;
+      }
+    }
+  </style><style>@media print {
+  @page { margin: 0.5cm; }
+  figure, table { break-inside: avoid; }
+  *, *::before, *::after {
+    print-color-adjust: exact; -webkit-print-color-adjust: exact;
+    backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+    animation-delay: -99s !important; animation-duration: .001s !important;
+    animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+    animation-play-state: running !important; transition-duration: 0s !important;
+  }
+}</style>
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{var j=["https://claude.ai","https://preview.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const M=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const R=q.length-q.trimStart().length;const m=q.length-q.trimEnd().length;if(R+m>=q.length)return K;return w(`txt:${C}:${K.start+R}:${K.end-m}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;M($,E(C),B(C))},JSXFragment($,C){M($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.type==="omelette-preview-refresh"){if(typeof J.token!=="string"||!/^[0-9a-f.-]+(\.(rc|pr-[0-9]+))?(\.[0-9]+\.[0-9a-f]{16})?$/.test(J.token))return;const z=Math.max(1,Math.floor((J.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+J.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+z;return}if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+<style data-omelette-print-defaults="">
+@media print {
+  @page { margin: 0; }
+  body { padding: 0.5in; box-sizing: border-box; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid; }
+  figure, table, pre, blockquote, img, svg, tr, [class~="card" i] { break-inside: avoid; }
+  img, svg { max-width: 100%; }
+  p { orphans: 3; widows: 3; }
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./Health Value Engine_files/support.js"></script><style>x-dc{display:none!important}</style><script src="./Health Value Engine_files/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script><script src="./Health Value Engine_files/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
+<title>Health Value Engine</title><style>html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}</style><link rel="preconnect" href="https://fonts.googleapis.com/" data-dc-tpl="1"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" data-dc-tpl="2"><link href="./Health Value Engine_files/css2" rel="stylesheet" data-dc-tpl="3"><style data-dc-tpl="4">
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:'Public Sans',-apple-system,Segoe UI,sans-serif;background:#eef1f5;color:#1e293b;-webkit-font-smoothing:antialiased;}
+  input[type=range]{-webkit-appearance:none;appearance:none;height:5px;border-radius:999px;background:#cbd5e1;outline:none;}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:17px;height:17px;border-radius:50%;background:#1F4E79;cursor:pointer;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+  input[type=range]::-moz-range-thumb{width:17px;height:17px;border-radius:50%;background:#1F4E79;cursor:pointer;border:2px solid #fff;}
+  select:focus,button:focus-visible,[tabindex]:focus-visible{outline:2px solid #2E75B6;outline-offset:2px;}
+</style><meta name="readermode-active" content="true"><style>*,*::before,*::after{animation-delay:-99s !important;animation-duration:.001s !important;animation-iteration-count:1 !important;animation-fill-mode:both !important;animation-play-state:running !important;transition-duration:0s !important}</style><style>@media print{[data-om-oversized]{break-inside:auto !important;page-break-inside:auto !important}[data-om-fakepage]{break-after:auto !important;page-break-after:auto !important}[data-om-fakepage]{padding:0 !important;background:none !important}}</style><meta name="readermode-active" content="true"></head><style type="text/css" id="custom-page-zoom-css"></style>
+<div class="spoken-word spoken-word--active"><div class="spoken-word-playback-controls"><legend class="spoken-word-playback-controls__legend rm-d-none-i">Text to Speech</legend><button type="button" class="spoken-word-playback-controls__button wp-exclude-emoji spoken-word-playback-controls__button--emoji rm-d-none-i" aria-label="Play">▶</button><button type="button" class="spoken-word-playback-controls__button wp-exclude-emoji spoken-word-playback-controls__button--emoji rm-d-none-i" aria-label="Previous">⏪</button><button type="button" class="spoken-word-playback-controls__button wp-exclude-emoji spoken-word-playback-controls__button--emoji rm-d-none-i" aria-label="Forward">⏩</button><button type="button" class="spoken-word-playback-controls__button wp-exclude-emoji spoken-word-playback-controls__button--emoji rm-d-none-i" aria-label="Settings">⚙</button><dialog class="spoken-word-playback-controls__dialog"><div class="spoken-word-playback-controls__heading"><label>Voice options</label></div><p><label class="spoken-word-playback-controls__label" for="input1-rate">Rate:</label> <input id="input1-rate" class="spoken-word-playback-controls__input form-control rm-input" type="number" data-prop="rate" step="0.1" min="0.1" max="10"></p><p><label class="spoken-word-playback-controls__label" for="input1-pitch">Pitch:</label> <input id="input1-pitch" class="spoken-word-playback-controls__input form-control rm-input" type="number" data-prop="pitch" min="0" max="2" step="0.1"></p><p><label class="spoken-word-playback-controls__label" for="input1-voice-en">Voice:</label> <select id="input1-voice-en" class="spoken-word-playback-controls__input rm-select-placeholder" data-language="en"><option value="Albert">🇺🇸 Albert</option><option value="Alice">🇮🇹 Alice</option><option value="Alva">🇸🇪 Alva</option><option value="Amira">🇲🇾 Amira</option><option value="Amélie">🇨🇦 Amélie</option><option value="Anna">🇩🇪 Anna</option><option value="Bad News">🇺🇸 Bad News</option><option value="Bahh">🇺🇸 Bahh</option><option value="Bells">🇺🇸 Bells</option><option value="Boing">🇺🇸 Boing</option><option value="Bubbles">🇺🇸 Bubbles</option><option value="Carmit">🇮🇱 Carmit</option><option value="Cellos">🇺🇸 Cellos</option><option value="Damayanti">🇮🇩 Damayanti</option><option value="Daniel">🇬🇧 Daniel</option><option value="Daria">🇧🇬 Daria</option><option value="Eddy (Chinese (China mainland))">🇨🇳 Eddy (Chinese (China mainland))</option><option value="Eddy (Chinese (Taiwan))">🇹🇼 Eddy (Chinese (Taiwan))</option><option value="Eddy (English (United Kingdom))">🇬🇧 Eddy (English (United Kingdom))</option><option value="Eddy (English (United States))">🇺🇸 Eddy (English (United States))</option><option value="Eddy (Finnish (Finland))">🇫🇮 Eddy (Finnish (Finland))</option><option value="Eddy (French (Canada))">🇨🇦 Eddy (French (Canada))</option><option value="Eddy (French (France))">🇫🇷 Eddy (French (France))</option><option value="Eddy (German (Germany))">🇩🇪 Eddy (German (Germany))</option><option value="Eddy (Italian (Italy))">🇮🇹 Eddy (Italian (Italy))</option><option value="Eddy (Japanese (Japan))">🇯🇵 Eddy (Japanese (Japan))</option><option value="Eddy (Korean (South Korea))">🇰🇷 Eddy (Korean (South Korea))</option><option value="Eddy (Portuguese (Brazil))">🇧🇷 Eddy (Portuguese (Brazil))</option><option value="Eddy (Spanish (Mexico))">🇲🇽 Eddy (Spanish (Mexico))</option><option value="Eddy (Spanish (Spain))">🇪🇸 Eddy (Spanish (Spain))</option><option value="Ellen">🇧🇪 Ellen</option><option value="Flo (Chinese (China mainland))">🇨🇳 Flo (Chinese (China mainland))</option><option value="Flo (Chinese (Taiwan))">🇹🇼 Flo (Chinese (Taiwan))</option><option value="Flo (English (United Kingdom))">🇬🇧 Flo (English (United Kingdom))</option><option value="Flo (English (United States))">🇺🇸 Flo (English (United States))</option><option value="Flo (Finnish (Finland))">🇫🇮 Flo (Finnish (Finland))</option><option value="Flo (French (Canada))">🇨🇦 Flo (French (Canada))</option><option value="Flo (French (France))">🇫🇷 Flo (French (France))</option><option value="Flo (German (Germany))">🇩🇪 Flo (German (Germany))</option><option value="Flo (Italian (Italy))">🇮🇹 Flo (Italian (Italy))</option><option value="Flo (Japanese (Japan))">🇯🇵 Flo (Japanese (Japan))</option><option value="Flo (Korean (South Korea))">🇰🇷 Flo (Korean (South Korea))</option><option value="Flo (Portuguese (Brazil))">🇧🇷 Flo (Portuguese (Brazil))</option><option value="Flo (Spanish (Mexico))">🇲🇽 Flo (Spanish (Mexico))</option><option value="Flo (Spanish (Spain))">🇪🇸 Flo (Spanish (Spain))</option><option value="Fred">🇺🇸 Fred</option><option value="Geeta">🇮🇳 Geeta</option><option value="Good News">🇺🇸 Good News</option><option value="Grandma (Chinese (China mainland))">🇨🇳 Grandma (Chinese (China mainland))</option><option value="Grandma (Chinese (Taiwan))">🇹🇼 Grandma (Chinese (Taiwan))</option><option value="Grandma (English (United Kingdom))">🇬🇧 Grandma (English (United Kingdom))</option><option value="Grandma (English (United States))">🇺🇸 Grandma (English (United States))</option><option value="Grandma (Finnish (Finland))">🇫🇮 Grandma (Finnish (Finland))</option><option value="Grandma (French (Canada))">🇨🇦 Grandma (French (Canada))</option><option value="Grandma (French (France))">🇫🇷 Grandma (French (France))</option><option value="Grandma (German (Germany))">🇩🇪 Grandma (German (Germany))</option><option value="Grandma (Italian (Italy))">🇮🇹 Grandma (Italian (Italy))</option><option value="Grandma (Japanese (Japan))">🇯🇵 Grandma (Japanese (Japan))</option><option value="Grandma (Korean (South Korea))">🇰🇷 Grandma (Korean (South Korea))</option><option value="Grandma (Portuguese (Brazil))">🇧🇷 Grandma (Portuguese (Brazil))</option><option value="Grandma (Spanish (Mexico))">🇲🇽 Grandma (Spanish (Mexico))</option><option value="Grandma (Spanish (Spain))">🇪🇸 Grandma (Spanish (Spain))</option><option value="Grandpa (Chinese (China mainland))">🇨🇳 Grandpa (Chinese (China mainland))</option><option value="Grandpa (Chinese (Taiwan))">🇹🇼 Grandpa (Chinese (Taiwan))</option><option value="Grandpa (English (United Kingdom))">🇬🇧 Grandpa (English (United Kingdom))</option><option value="Grandpa (English (United States))">🇺🇸 Grandpa (English (United States))</option><option value="Grandpa (Finnish (Finland))">🇫🇮 Grandpa (Finnish (Finland))</option><option value="Grandpa (French (Canada))">🇨🇦 Grandpa (French (Canada))</option><option value="Grandpa (French (France))">🇫🇷 Grandpa (French (France))</option><option value="Grandpa (German (Germany))">🇩🇪 Grandpa (German (Germany))</option><option value="Grandpa (Italian (Italy))">🇮🇹 Grandpa (Italian (Italy))</option><option value="Grandpa (Japanese (Japan))">🇯🇵 Grandpa (Japanese (Japan))</option><option value="Grandpa (Korean (South Korea))">🇰🇷 Grandpa (Korean (South Korea))</option><option value="Grandpa (Portuguese (Brazil))">🇧🇷 Grandpa (Portuguese (Brazil))</option><option value="Grandpa (Spanish (Mexico))">🇲🇽 Grandpa (Spanish (Mexico))</option><option value="Grandpa (Spanish (Spain))">🇪🇸 Grandpa (Spanish (Spain))</option><option value="Ioana">🇷🇴 Ioana</option><option value="Jacques">🇫🇷 Jacques</option><option value="Jester">🇺🇸 Jester</option><option value="Joana">🇵🇹 Joana</option><option value="Junior">🇺🇸 Junior</option><option value="Kanya">🇹🇭 Kanya</option><option value="Karen">🇦🇺 Karen</option><option value="Kathy">🇺🇸 Kathy</option><option value="Kyoko">🇯🇵 Kyoko</option><option value="Lana">🇭🇷 Lana</option><option value="Laura">🇸🇰 Laura</option><option value="Lekha">🇮🇳 Lekha</option><option value="Lesya">🇺🇦 Lesya</option><option value="Linh">🇻🇳 Linh</option><option value="Luciana">🇧🇷 Luciana</option><option value="Majed">🇕🇕🇖 Majed</option><option value="Meijia">🇹🇼 Meijia</option><option value="Melina">🇬🇷 Melina</option><option value="Milena">🇷🇺 Milena</option><option value="Moira">🇮🇪 Moira</option><option value="Montse">🇪🇸 Montse</option><option value="Mónica">🇪🇸 Mónica</option><option value="Nora">🇳🇴 Nora</option><option value="Organ">🇺🇸 Organ</option><option value="Paulina">🇲🇽 Paulina</option><option value="Piya">🇮🇳 Piya</option><option value="Ralph">🇺🇸 Ralph</option><option value="Reed (Chinese (China mainland))">🇨🇳 Reed (Chinese (China mainland))</option><option value="Reed (Chinese (Taiwan))">🇹🇼 Reed (Chinese (Taiwan))</option><option value="Reed (English (United Kingdom))">🇬🇧 Reed (English (United Kingdom))</option><option value="Reed (English (United States))">🇺🇸 Reed (English (United States))</option><option value="Reed (Finnish (Finland))">🇫🇮 Reed (Finnish (Finland))</option><option value="Reed (French (Canada))">🇨🇦 Reed (French (Canada))</option><option value="Reed (German (Germany))">🇩🇪 Reed (German (Germany))</option><option value="Reed (Italian (Italy))">🇮🇹 Reed (Italian (Italy))</option><option value="Reed (Japanese (Japan))">🇯🇵 Reed (Japanese (Japan))</option><option value="Reed (Korean (South Korea))">🇰🇷 Reed (Korean (South Korea))</option><option value="Reed (Portuguese (Brazil))">🇧🇷 Reed (Portuguese (Brazil))</option><option value="Reed (Spanish (Mexico))">🇲🇽 Reed (Spanish (Mexico))</option><option value="Reed (Spanish (Spain))">🇪🇸 Reed (Spanish (Spain))</option><option value="Rishi">🇮🇳 Rishi</option><option value="Rocko (Chinese (China mainland))">🇨🇳 Rocko (Chinese (China mainland))</option><option value="Rocko (Chinese (Taiwan))">🇹🇼 Rocko (Chinese (Taiwan))</option><option value="Rocko (English (United Kingdom))">🇬🇧 Rocko (English (United Kingdom))</option><option value="Rocko (English (United States))">🇺🇸 Rocko (English (United States))</option><option value="Rocko (Finnish (Finland))">🇫🇮 Rocko (Finnish (Finland))</option><option value="Rocko (French (Canada))">🇨🇦 Rocko (French (Canada))</option><option value="Rocko (French (France))">🇫🇷 Rocko (French (France))</option><option value="Rocko (German (Germany))">🇩🇪 Rocko (German (Germany))</option><option value="Rocko (Italian (Italy))">🇮🇹 Rocko (Italian (Italy))</option><option value="Rocko (Japanese (Japan))">🇯🇵 Rocko (Japanese (Japan))</option><option value="Rocko (Korean (South Korea))">🇰🇷 Rocko (Korean (South Korea))</option><option value="Rocko (Portuguese (Brazil))">🇧🇷 Rocko (Portuguese (Brazil))</option><option value="Rocko (Spanish (Mexico))">🇲🇽 Rocko (Spanish (Mexico))</option><option value="Rocko (Spanish (Spain))">🇪🇸 Rocko (Spanish (Spain))</option><option value="Samantha">🇺🇸 Samantha</option><option value="Sandy (Chinese (China mainland))">🇨🇳 Sandy (Chinese (China mainland))</option><option value="Sandy (Chinese (Taiwan))">🇹🇼 Sandy (Chinese (Taiwan))</option><option value="Sandy (English (United Kingdom))">🇬🇧 Sandy (English (United Kingdom))</option><option value="Sandy (English (United States))">🇺🇸 Sandy (English (United States))</option><option value="Sandy (Finnish (Finland))">🇫🇮 Sandy (Finnish (Finland))</option><option value="Sandy (French (Canada))">🇨🇦 Sandy (French (Canada))</option><option value="Sandy (French (France))">🇫🇷 Sandy (French (France))</option><option value="Sandy (German (Germany))">🇩🇪 Sandy (German (Germany))</option><option value="Sandy (Italian (Italy))">🇮🇹 Sandy (Italian (Italy))</option><option value="Sandy (Japanese (Japan))">🇯🇵 Sandy (Japanese (Japan))</option><option value="Sandy (Korean (South Korea))">🇰🇷 Sandy (Korean (South Korea))</option><option value="Sandy (Portuguese (Brazil))">🇧🇷 Sandy (Portuguese (Brazil))</option><option value="Sandy (Spanish (Mexico))">🇲🇽 Sandy (Spanish (Mexico))</option><option value="Sandy (Spanish (Spain))">🇪🇸 Sandy (Spanish (Spain))</option><option value="Sara">🇩🇰 Sara</option><option value="Satu">🇫🇮 Satu</option><option value="Shelley (Chinese (China mainland))">🇨🇳 Shelley (Chinese (China mainland))</option><option value="Shelley (Chinese (Taiwan))">🇹🇼 Shelley (Chinese (Taiwan))</option><option value="Shelley (English (United Kingdom))">🇬🇧 Shelley (English (United Kingdom))</option><option value="Shelley (English (United States))">🇺🇸 Shelley (English (United States))</option><option value="Shelley (Finnish (Finland))">🇫🇮 Shelley (Finnish (Finland))</option><option value="Shelley (French (Canada))">🇨🇦 Shelley (French (Canada))</option><option value="Shelley (French (France))">🇫🇷 Shelley (French (France))</option><option value="Shelley (German (Germany))">🇩🇪 Shelley (German (Germany))</option><option value="Shelley (Italian (Italy))">🇮🇹 Shelley (Italian (Italy))</option><option value="Shelley (Japanese (Japan))">🇯🇵 Shelley (Japanese (Japan))</option><option value="Shelley (Korean (South Korea))">🇰🇷 Shelley (Korean (South Korea))</option><option value="Shelley (Portuguese (Brazil))">🇧🇷 Shelley (Portuguese (Brazil))</option><option value="Shelley (Spanish (Mexico))">🇲🇽 Shelley (Spanish (Mexico))</option><option value="Shelley (Spanish (Spain))">🇪🇸 Shelley (Spanish (Spain))</option><option value="Sinji">🇭🇰 Sinji</option><option value="Soumya">🇮🇳 Soumya</option><option value="Superstar">🇺🇸 Superstar</option><option value="Tessa">🇿🇦 Tessa</option><option value="Thomas">🇫🇷 Thomas</option><option value="Tina">🇸🇮 Tina</option><option value="Tingting">🇨🇳 Tingting</option><option value="Trinoids">🇺🇸 Trinoids</option><option value="Tünde">🇭🇺 Tünde</option><option value="Vani">🇮🇳 Vani</option><option value="Whisper">🇺🇸 Whisper</option><option value="Wobble">🇺🇸 Wobble</option><option value="Xander">🇳🇱 Xander</option><option value="Yelda">🇹🇷 Yelda</option><option value="Yuna">🇰🇷 Yuna</option><option value="Zarvox">🇺🇸 Zarvox</option><option value="Zosia">🇵🇱 Zosia</option><option value="Zuzana">🇨🇿 Zuzana</option></select></p><button class="btn btn-sm btn-primary rm-btn-base rm-btn-primary p-l-20 p-r-20">Close</button></dialog></div></div><body data-rm-theme="light" class="entry-content" lang="en">
+<div id="dc-root"><div class="sc-host" data-sc-name="Health Value Engine-print-156xyrq"><div data-dc-tpl="5" style="min-height: 100vh; padding: 22px;"><div data-dc-tpl="6" style="max-width: 1480px; margin: 0px auto; display: flex; flex-direction: column; gap: 16px;">
+
+  
+  <div data-dc-tpl="7" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 18px 22px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+    <div data-dc-tpl="8" style="display: flex; align-items: center; gap: 14px; min-width: 0px;">
+      <div data-dc-tpl="9" style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, rgb(31, 78, 121), rgb(46, 117, 182)); display: flex; align-items: center; justify-content: center; flex: 0 0 auto;">
+        <svg data-dc-tpl="10" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path data-dc-tpl="11" d="M3 17l4-5 3 3 4-7 4 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path><circle data-dc-tpl="12" cx="20" cy="6" r="2.4" fill="#fff"></circle></svg>
+      </div>
+      <div data-dc-tpl="13" style="min-width: 0px;">
+        <div data-dc-tpl="14" style="font-size: 21px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1;">Health Value Engine</div>
+        <div data-dc-tpl="15" style="font-size: 13px; color: rgb(100, 116, 139); line-height: 1.3;">Explore the health produced per dollar spent across U.S. states and counties.</div>
+      </div>
+    </div>
+    <div data-dc-tpl="16" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+      <div data-dc-tpl="17" style="display: flex; align-items: center; gap: 7px; background: rgb(255, 247, 237); border: 1px solid rgb(254, 215, 170); color: rgb(154, 52, 18); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 600;">
+        <span data-dc-tpl="18" style="width: 7px; height: 7px; border-radius: 50%; background: rgb(234, 88, 12); flex: 0 0 auto;"></span>
+        Illustrative prototype · synthetic data for layout and concept only, not results
+      </div>
+      <button data-dc-tpl="19" type="button" aria-label="About the metrics" style="border: 1px solid rgb(203, 213, 225); background: rgb(255, 255, 255); color: rgb(51, 65, 85); border-radius: 8px; width: 34px; height: 34px; font-size: 15px; font-weight: 700; cursor: pointer; flex: 0 0 auto;">i</button>
+    </div>
+  </div>
+
+  
+  
+
+  
+  <div data-dc-tpl="28" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 14px 18px; display: flex; flex-wrap: wrap; gap: 18px 22px; align-items: flex-end; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+    <div data-dc-tpl="29" style="display: flex; flex-direction: column; gap: 5px;">
+      <label data-dc-tpl="30" style="font-size: 11px; font-weight: 700; color: rgb(100, 116, 139); letter-spacing: 0.04em; text-transform: uppercase;">Condition</label>
+      <select data-dc-tpl="31" aria-label="Condition" style="font-family: inherit; font-size: 13px; font-weight: 600; color: rgb(30, 41, 59); border: 1px solid rgb(203, 213, 225); border-radius: 8px; padding: 8px 10px; background: rgb(255, 255, 255); min-width: 200px; cursor: pointer;">
+        
+          <option data-dc-tpl="33" value="type2_diabetes"><span class="sc-interp">Type 2 diabetes</span></option>
+        
+          <option data-dc-tpl="33" value="ischemic_heart_disease"><span class="sc-interp">Ischemic heart disease</span></option>
+        
+          <option data-dc-tpl="33" value="neoplasms"><span class="sc-interp">Neoplasms (cancers)</span></option>
+        
+          <option data-dc-tpl="33" value="copd"><span class="sc-interp">Chronic obstructive pulmonary disease</span></option>
+        
+          <option data-dc-tpl="33" value="chronic_kidney_disease"><span class="sc-interp">Chronic kidney disease</span></option>
+        
+          <option data-dc-tpl="33" value="stroke"><span class="sc-interp">Stroke</span></option>
+        
+          <option data-dc-tpl="33" value="depressive_disorders"><span class="sc-interp">Depressive disorders</span></option>
+        
+          <option data-dc-tpl="33" value="low_back_pain"><span class="sc-interp">Low back pain</span></option>
+        
+          <option data-dc-tpl="33" value="hiv"><span class="sc-interp">HIV</span></option>
+        
+          <option data-dc-tpl="33" value="opioid_use_disorder"><span class="sc-interp">Opioid use disorder</span></option>
+        
+      </select>
+    </div>
+
+    <div data-dc-tpl="34" style="display: flex; flex-direction: column; gap: 5px; min-width: 210px;">
+      <label data-dc-tpl="35" style="font-size: 11px; font-weight: 700; color: rgb(100, 116, 139); letter-spacing: 0.04em; text-transform: uppercase; display: flex; justify-content: space-between;">Year <span data-dc-tpl="36" style="color: rgb(31, 78, 121); font-weight: 800;"><span class="sc-interp">2023</span></span></label>
+      <input data-dc-tpl="37" type="range" min="2010" max="2023" step="1" aria-label="Year" value="2023" style="width: 210px; margin-top: 6px;">
+      <div data-dc-tpl="38" style="display: flex; justify-content: space-between; font-size: 10px; color: rgb(148, 163, 184);"><span class="sc-interp">2010</span><span data-dc-tpl="39"><span class="sc-interp">2023</span></span></div>
+    </div>
+
+    <div data-dc-tpl="40" style="display: flex; flex-direction: column; gap: 5px;">
+      <label data-dc-tpl="41" style="font-size: 11px; font-weight: 700; color: rgb(100, 116, 139); letter-spacing: 0.04em; text-transform: uppercase;">Metric</label>
+      <div data-dc-tpl="42" role="group" aria-label="Metric" style="display: flex; border: 1px solid rgb(203, 213, 225); border-radius: 8px; overflow: hidden;">
+        
+          <button data-dc-tpl="44" type="button" aria-pressed="true" style="font-family: inherit; font-size: 12px; font-weight: 600; padding: 8px 12px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; white-space: nowrap; background: rgb(31, 78, 121); color: rgb(255, 255, 255);"><span class="sc-interp">Value of care</span></button>
+        
+          <button data-dc-tpl="44" type="button" aria-pressed="false" style="font-family: inherit; font-size: 12px; font-weight: 600; padding: 8px 12px; border-width: medium medium medium 1px; border-style: none none none solid; border-color: currentcolor currentcolor currentcolor rgb(203, 213, 225); border-image: initial; cursor: pointer; white-space: nowrap; background: rgb(255, 255, 255); color: rgb(71, 85, 105);"><span class="sc-interp">Spending per case</span></button>
+        
+          <button data-dc-tpl="44" type="button" aria-pressed="false" style="font-family: inherit; font-size: 12px; font-weight: 600; padding: 8px 12px; border-width: medium medium medium 1px; border-style: none none none solid; border-color: currentcolor currentcolor currentcolor rgb(203, 213, 225); border-image: initial; cursor: pointer; white-space: nowrap; background: rgb(255, 255, 255); color: rgb(71, 85, 105);"><span class="sc-interp">DALYs averted per case</span></button>
+        
+      </div>
+    </div>
+
+    <div data-dc-tpl="45" style="display: flex; flex-direction: column; gap: 5px;">
+      <label data-dc-tpl="46" style="font-size: 11px; font-weight: 700; color: rgb(100, 116, 139); letter-spacing: 0.04em; text-transform: uppercase;">Payer</label>
+      <div data-dc-tpl="47" style="display: flex; gap: 6px; flex-wrap: wrap;">
+        
+          <button data-dc-tpl="49" type="button" aria-pressed="true" style="font-family: inherit; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 7px 11px; border-radius: 999px; cursor: pointer; border: 1px solid rgb(31, 78, 121); background: rgb(238, 244, 251); color: rgb(31, 78, 121);"><span data-dc-tpl="50" style="width: 9px; height: 9px; border-radius: 3px; background: rgb(31, 78, 121); flex: 0 0 auto;"></span><span class="sc-interp">Medicare</span></button>
+        
+          <button data-dc-tpl="49" type="button" aria-pressed="true" style="font-family: inherit; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 7px 11px; border-radius: 999px; cursor: pointer; border: 1px solid rgb(31, 78, 121); background: rgb(238, 244, 251); color: rgb(31, 78, 121);"><span data-dc-tpl="50" style="width: 9px; height: 9px; border-radius: 3px; background: rgb(46, 117, 182); flex: 0 0 auto;"></span><span class="sc-interp">Medicaid</span></button>
+        
+          <button data-dc-tpl="49" type="button" aria-pressed="true" style="font-family: inherit; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 7px 11px; border-radius: 999px; cursor: pointer; border: 1px solid rgb(31, 78, 121); background: rgb(238, 244, 251); color: rgb(31, 78, 121);"><span data-dc-tpl="50" style="width: 9px; height: 9px; border-radius: 3px; background: rgb(111, 168, 220); flex: 0 0 auto;"></span><span class="sc-interp">Private</span></button>
+        
+          <button data-dc-tpl="49" type="button" aria-pressed="true" style="font-family: inherit; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 7px 11px; border-radius: 999px; cursor: pointer; border: 1px solid rgb(31, 78, 121); background: rgb(238, 244, 251); color: rgb(31, 78, 121);"><span data-dc-tpl="50" style="width: 9px; height: 9px; border-radius: 3px; background: rgb(169, 204, 232); flex: 0 0 auto;"></span><span class="sc-interp">Out of pocket</span></button>
+        
+      </div>
+    </div>
+
+    <div data-dc-tpl="51" style="display: flex; flex-direction: column; gap: 5px;">
+      <label data-dc-tpl="52" style="font-size: 11px; font-weight: 700; color: rgb(100, 116, 139); letter-spacing: 0.04em; text-transform: uppercase;">Geography</label>
+      <div data-dc-tpl="53" role="group" aria-label="Geography level" style="display: flex; border: 1px solid rgb(203, 213, 225); border-radius: 8px; overflow: hidden;">
+        
+          <button data-dc-tpl="55" type="button" aria-pressed="true" style="font-family: inherit; font-size: 12px; font-weight: 600; padding: 8px 12px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; white-space: nowrap; background: rgb(31, 78, 121); color: rgb(255, 255, 255);"><span class="sc-interp">State</span></button>
+        
+          <button data-dc-tpl="55" type="button" aria-pressed="false" style="font-family: inherit; font-size: 12px; font-weight: 600; padding: 8px 12px; border-width: medium medium medium 1px; border-style: none none none solid; border-color: currentcolor currentcolor currentcolor rgb(203, 213, 225); border-image: initial; cursor: pointer; white-space: nowrap; background: rgb(255, 255, 255); color: rgb(71, 85, 105);"><span class="sc-interp">County</span></button>
+        
+      </div>
+    </div>
+
+    <button data-dc-tpl="56" type="button" style="margin-left: auto; border: 1px solid rgb(203, 213, 225); background: rgb(248, 250, 252); color: rgb(51, 65, 85); border-radius: 8px; padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit;">Reset</button>
+  </div>
+
+  
+  <div data-dc-tpl="57" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch;">
+
+    
+    <div data-dc-tpl="58" style="flex: 1 1 600px; background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 18px; display: flex; flex-direction: column; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+      <div data-dc-tpl="59" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 6px;">
+        <div data-dc-tpl="60">
+          <div data-dc-tpl="61" style="font-size: 14px; font-weight: 700;"><span class="sc-interp">Value of care by state</span></div>
+          <div data-dc-tpl="62" style="font-size: 12px; color: rgb(100, 116, 139);"><span class="sc-interp">Type 2 diabetes · 2023 · click a tile to select; switch to County to drill in</span></div>
+        </div>
+        
+      </div>
+
+      <div data-dc-tpl="65" style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center; padding: 8px 0px;">
+        <div data-dc-tpl="66" style="position: relative; width: 714px; height: 474px; max-width: 100%;">
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Alaska. Value of care 2.9. Rank 49 of 51" style="position: absolute; left: 0px; top: 0px; width: 54px; height: 54px; border-radius: 7px; background: rgb(222, 79, 57); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">AK</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#49</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Maine. Value of care 7.2. Rank 5 of 51" style="position: absolute; left: 660px; top: 0px; width: 54px; height: 54px; border-radius: 7px; background: rgb(54, 161, 87); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">ME</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#5</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Vermont. Value of care 5.7. Rank 17 of 51" style="position: absolute; left: 600px; top: 60px; width: 54px; height: 54px; border-radius: 7px; background: rgb(192, 205, 123); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">VT</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#17</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="New Hampshire. Value of care 5.7. Rank 18 of 51" style="position: absolute; left: 660px; top: 60px; width: 54px; height: 54px; border-radius: 7px; background: rgb(194, 205, 124); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NH</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#18</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Washington. Value of care 4.0. Rank 32 of 51. Selected" style="position: absolute; left: 60px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(240, 160, 103); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 2.5px solid rgb(15, 39, 66); box-shadow: rgba(46, 117, 182, 0.35) 0px 0px 0px 3px !important; z-index: 3; filter: drop-shadow(rgba(0, 0, 0, 0.18) 0px 4px 10px) !important;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">WA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#32</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Idaho. Value of care 7.5. Rank 2 of 51" style="position: absolute; left: 120px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(33, 154, 82); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">ID</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#2</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Montana. Value of care 4.0. Rank 36 of 51" style="position: absolute; left: 180px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(239, 155, 100); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MT</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#36</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="North Dakota. Value of care 2.4. Rank 51 of 51" style="position: absolute; left: 240px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(215, 48, 39); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">ND</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#51</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Minnesota. Value of care 3.4. Rank 44 of 51" style="position: absolute; left: 300px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(230, 116, 77); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MN</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#44</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Wisconsin. Value of care 6.2. Rank 12 of 51" style="position: absolute; left: 360px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(149, 191, 112); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">WI</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#12</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Michigan. Value of care 6.6. Rank 8 of 51" style="position: absolute; left: 480px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(112, 179, 102); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MI</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#8</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="New York. Value of care 6.3. Rank 10 of 51" style="position: absolute; left: 540px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(136, 187, 109); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NY</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#10</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Massachusetts. Value of care 4.0. Rank 35 of 51" style="position: absolute; left: 600px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(239, 156, 100); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#35</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Rhode Island. Value of care 3.1. Rank 45 of 51" style="position: absolute; left: 660px; top: 120px; width: 54px; height: 54px; border-radius: 7px; background: rgb(226, 99, 68); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">RI</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#45</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Oregon. Value of care 7.1. Rank 6 of 51" style="position: absolute; left: 60px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(64, 164, 90); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">OR</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#6</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Nevada. Value of care 4.1. Rank 31 of 51" style="position: absolute; left: 120px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(241, 164, 105); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NV</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#31</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Wyoming. Value of care 5.2. Rank 25 of 51" style="position: absolute; left: 180px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(237, 218, 134); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">WY</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#25</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="South Dakota. Value of care 4.9. Rank 27 of 51" style="position: absolute; left: 240px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(253, 220, 137); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">SD</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#27</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Iowa. Value of care 5.5. Rank 21 of 51" style="position: absolute; left: 300px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(211, 211, 128); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">IA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#21</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Illinois. Value of care 3.5. Rank 42 of 51" style="position: absolute; left: 360px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(231, 120, 80); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">IL</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#42</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Indiana. Value of care 4.7. Rank 28 of 51" style="position: absolute; left: 420px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(250, 207, 129); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">IN</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#28</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Ohio. Value of care 2.9. Rank 48 of 51" style="position: absolute; left: 480px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(223, 84, 59); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">OH</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#48</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Pennsylvania. Value of care 4.3. Rank 30 of 51" style="position: absolute; left: 540px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(243, 175, 111); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">PA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#30</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="New Jersey. Value of care 3.8. Rank 38 of 51" style="position: absolute; left: 600px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(237, 147, 95); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NJ</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#38</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Connecticut. Value of care 7.4. Rank 3 of 51" style="position: absolute; left: 660px; top: 180px; width: 54px; height: 54px; border-radius: 7px; background: rgb(42, 157, 84); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">CT</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#3</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="California. Value of care 6.0. Rank 14 of 51" style="position: absolute; left: 60px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(165, 196, 116); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">CA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#14</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Utah. Value of care 3.9. Rank 37 of 51" style="position: absolute; left: 120px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(237, 147, 96); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">UT</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#37</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Colorado. Value of care 3.8. Rank 40 of 51" style="position: absolute; left: 180px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(236, 142, 92); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">CO</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#40</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Nebraska. Value of care 6.3. Rank 9 of 51" style="position: absolute; left: 240px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(134, 186, 108); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NE</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#9</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Missouri. Value of care 5.2. Rank 24 of 51" style="position: absolute; left: 300px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(230, 217, 133); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MO</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#24</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Kentucky. Value of care 4.0. Rank 33 of 51" style="position: absolute; left: 360px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(240, 159, 102); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">KY</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#33</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="West Virginia. Value of care 6.2. Rank 11 of 51" style="position: absolute; left: 420px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(145, 190, 111); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">WV</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#11</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Virginia. Value of care 5.3. Rank 23 of 51" style="position: absolute; left: 480px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(221, 214, 131); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">VA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#23</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Maryland. Value of care 5.4. Rank 22 of 51" style="position: absolute; left: 540px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(217, 212, 129); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MD</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#22</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Delaware. Value of care 2.7. Rank 50 of 51" style="position: absolute; left: 600px; top: 240px; width: 54px; height: 54px; border-radius: 7px; background: rgb(220, 72, 52); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">DE</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#50</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Arizona. Value of care 3.0. Rank 47 of 51" style="position: absolute; left: 120px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(224, 87, 61); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">AZ</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#47</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="New Mexico. Value of care 3.0. Rank 46 of 51" style="position: absolute; left: 180px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(224, 90, 63); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NM</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#46</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Kansas. Value of care 5.6. Rank 20 of 51" style="position: absolute; left: 240px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(199, 207, 125); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">KS</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#20</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Arkansas. Value of care 5.0. Rank 26 of 51" style="position: absolute; left: 300px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(254, 223, 138); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">AR</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#26</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Tennessee. Value of care 5.7. Rank 16 of 51" style="position: absolute; left: 360px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(191, 204, 123); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">TN</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#16</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="North Carolina. Value of care 6.2. Rank 13 of 51" style="position: absolute; left: 420px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(150, 191, 112); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">NC</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#13</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="South Carolina. Value of care 7.4. Rank 4 of 51" style="position: absolute; left: 480px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(45, 158, 85); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">SC</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#4</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="District of Columbia. Value of care 4.6. Rank 29 of 51" style="position: absolute; left: 540px; top: 300px; width: 54px; height: 54px; border-radius: 7px; background: rgb(248, 198, 124); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">DC</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#29</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Oklahoma. Value of care 7.6. Rank 1 of 51" style="position: absolute; left: 240px; top: 360px; width: 54px; height: 54px; border-radius: 7px; background: rgb(26, 152, 80); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">OK</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#1</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Louisiana. Value of care 4.0. Rank 34 of 51" style="position: absolute; left: 300px; top: 360px; width: 54px; height: 54px; border-radius: 7px; background: rgb(240, 159, 102); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">LA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#34</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Mississippi. Value of care 3.8. Rank 39 of 51" style="position: absolute; left: 360px; top: 360px; width: 54px; height: 54px; border-radius: 7px; background: rgb(237, 145, 94); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">MS</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#39</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Alabama. Value of care 3.7. Rank 41 of 51" style="position: absolute; left: 420px; top: 360px; width: 54px; height: 54px; border-radius: 7px; background: rgb(235, 137, 89); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">AL</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#41</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Georgia. Value of care 3.4. Rank 43 of 51" style="position: absolute; left: 480px; top: 360px; width: 54px; height: 54px; border-radius: 7px; background: rgb(231, 119, 80); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">GA</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#43</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Hawaii. Value of care 5.8. Rank 15 of 51" style="position: absolute; left: 0px; top: 420px; width: 54px; height: 54px; border-radius: 7px; background: rgb(183, 202, 121); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">HI</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#15</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Texas. Value of care 5.6. Rank 19 of 51" style="position: absolute; left: 180px; top: 420px; width: 54px; height: 54px; border-radius: 7px; background: rgb(196, 206, 124); color: rgb(30, 41, 59); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">TX</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(30, 41, 59);"><span class="sc-interp">#19</span></span>
+            </div>
+          
+            <div data-dc-tpl="68" role="button" tabindex="0" aria-label="Florida. Value of care 6.9. Rank 7 of 51" style="position: absolute; left: 540px; top: 420px; width: 54px; height: 54px; border-radius: 7px; background: rgb(82, 170, 95); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s; border: 1px solid rgba(255, 255, 255, 0.55); box-shadow: none; z-index: 1;">
+              <span data-dc-tpl="69" style="line-height: 1;"><span class="sc-interp">FL</span></span>
+              <span data-dc-tpl="70" style="font-size: 9px; font-weight: 600; opacity: 0.78; margin-top: 1px; color: rgb(255, 255, 255);"><span class="sc-interp">#7</span></span>
+            </div>
+          
+
+          
+        </div>
+      </div>
+
+      
+      <div data-dc-tpl="83" style="border-top: 1px solid rgb(241, 245, 249); padding-top: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <div data-dc-tpl="84" style="display: flex; align-items: center; gap: 10px;">
+          <span data-dc-tpl="85" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600;"><span class="sc-interp">Lower value</span></span>
+          <div data-dc-tpl="86" style="width: 180px; height: 11px; border-radius: 6px; background: linear-gradient(90deg, rgb(215, 48, 39), rgb(254, 224, 139), rgb(26, 152, 80)); border: 1px solid rgb(226, 232, 240);"></div>
+          <span data-dc-tpl="87" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600;"><span class="sc-interp">Higher value</span></span>
+        </div>
+        <div data-dc-tpl="88" style="font-size: 11px; color: rgb(148, 163, 184);"><span class="sc-interp">2.4 to 7.6</span></div>
+      </div>
+    </div>
+
+    
+    <div data-dc-tpl="89" style="flex: 1 1 330px; display: flex; flex-direction: column; gap: 16px; min-width: 300px;">
+
+      
+      <div data-dc-tpl="90" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+        
+          <div data-dc-tpl="92" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 10px; box-shadow: none !important; padding: 13px 14px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+            <div data-dc-tpl="93" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600; line-height: 1.25; min-height: 28px;"><span class="sc-interp">Total spending (states)</span></div>
+            <div data-dc-tpl="94" style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-top: 3px; line-height: 1.05;"><span class="sc-interp">$383B</span></div>
+            <div data-dc-tpl="95" style="display: flex; align-items: center; gap: 5px; margin-top: 4px; font-size: 11.5px; font-weight: 600; color: rgb(22, 163, 74);"><span data-dc-tpl="96"><span class="sc-interp">▼</span></span><span class="sc-interp">-8.2%</span><span data-dc-tpl="97" style="color: rgb(148, 163, 184); font-weight: 500;"><span class="sc-interp">vs 2022</span></span></div>
+          </div>
+        
+          <div data-dc-tpl="92" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 10px; box-shadow: none !important; padding: 13px 14px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+            <div data-dc-tpl="93" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600; line-height: 1.25; min-height: 28px;"><span class="sc-interp">Total disease burden (DALYs)</span></div>
+            <div data-dc-tpl="94" style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-top: 3px; line-height: 1.05;"><span class="sc-interp">3.8M</span></div>
+            <div data-dc-tpl="95" style="display: flex; align-items: center; gap: 5px; margin-top: 4px; font-size: 11.5px; font-weight: 600; color: rgb(220, 38, 38);"><span data-dc-tpl="96"><span class="sc-interp">▲</span></span><span class="sc-interp">+0.7%</span><span data-dc-tpl="97" style="color: rgb(148, 163, 184); font-weight: 500;"><span class="sc-interp">vs 2022</span></span></div>
+          </div>
+        
+          <div data-dc-tpl="92" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 10px; box-shadow: none !important; padding: 13px 14px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+            <div data-dc-tpl="93" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600; line-height: 1.25; min-height: 28px;"><span class="sc-interp">National value score</span></div>
+            <div data-dc-tpl="94" style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-top: 3px; line-height: 1.05;"><span class="sc-interp">5.2</span></div>
+            <div data-dc-tpl="95" style="display: flex; align-items: center; gap: 5px; margin-top: 4px; font-size: 11.5px; font-weight: 600; color: rgb(22, 163, 74);"><span data-dc-tpl="96"><span class="sc-interp">▲</span></span><span class="sc-interp">+13.2%</span><span data-dc-tpl="97" style="color: rgb(148, 163, 184); font-weight: 500;"><span class="sc-interp">vs 2022</span></span></div>
+          </div>
+        
+          <div data-dc-tpl="92" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 10px; box-shadow: none !important; padding: 13px 14px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+            <div data-dc-tpl="93" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600; line-height: 1.25; min-height: 28px;"><span class="sc-interp">Washington value rank</span></div>
+            <div data-dc-tpl="94" style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-top: 3px; line-height: 1.05;"><span class="sc-interp">#32</span></div>
+            <div data-dc-tpl="95" style="display: flex; align-items: center; gap: 5px; margin-top: 4px; font-size: 11.5px; font-weight: 600; color: rgb(22, 163, 74);"><span data-dc-tpl="96"><span class="sc-interp">▲</span></span><span class="sc-interp">up 19</span><span data-dc-tpl="97" style="color: rgb(148, 163, 184); font-weight: 500;"><span class="sc-interp">of 51</span></span></div>
+          </div>
+        
+      </div>
+
+      
+      <div data-dc-tpl="98" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 16px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+        <div data-dc-tpl="99" style="font-size: 14px; font-weight: 700;">Peer benchmarking</div>
+        <div data-dc-tpl="100" style="font-size: 12px; color: rgb(100, 116, 139); margin-bottom: 12px;"><span class="sc-interp">Washington vs. five value-matched peers · Value of care</span></div>
+        <div data-dc-tpl="101" style="display: flex; flex-direction: column; gap: 9px;">
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 500; color: rgb(71, 85, 105); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Nevada</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 100%; height: 100%; background: rgb(203, 213, 225); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.1</span></div>
+            </div>
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 700; color: rgb(31, 78, 121); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">▸ Washington</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 98.6574%; height: 100%; background: rgb(46, 117, 182); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.0</span></div>
+            </div>
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 500; color: rgb(71, 85, 105); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Kentucky</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 98.3273%; height: 100%; background: rgb(203, 213, 225); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.0</span></div>
+            </div>
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 500; color: rgb(71, 85, 105); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Louisiana</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 98.0736%; height: 100%; background: rgb(203, 213, 225); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.0</span></div>
+            </div>
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 500; color: rgb(71, 85, 105); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Massachusetts</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 97.0972%; height: 100%; background: rgb(203, 213, 225); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.0</span></div>
+            </div>
+          
+            <div data-dc-tpl="103" style="display: flex; align-items: center; gap: 10px;">
+              <div data-dc-tpl="104" style="width: 118px; flex: 0 0 auto; font-size: 12px; font-weight: 500; color: rgb(71, 85, 105); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Montana</span></div>
+              <div data-dc-tpl="105" style="flex: 1 1 0%; height: 18px; background: rgb(241, 245, 249); border-radius: 5px; overflow: hidden;">
+                <div data-dc-tpl="106" style="width: 96.7711%; height: 100%; background: rgb(203, 213, 225); border-radius: 5px; transition: width 0.25s;"></div>
+              </div>
+              <div data-dc-tpl="107" style="width: 64px; flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600;"><span class="sc-interp">4.0</span></div>
+            </div>
+          
+        </div>
+      </div>
+
+      
+      <div data-dc-tpl="108" style="background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 16px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+        <div data-dc-tpl="109" style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <div data-dc-tpl="110" style="font-size: 14px; font-weight: 700;">Scenario explorer</div>
+          <span data-dc-tpl="111" title="newDALYsAverted = base × (1 + 0.25 × spend% ) × (1 + 0.012 × coveragePts); newSpending = base × (1 + spend%) × (1 + 0.005 × coveragePts); value = DALYs averted per $1M. Transparent linear-elasticity model for illustration only." tabindex="0" aria-label="Scenario formula" style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; border: 1px solid rgb(203, 213, 225); color: rgb(100, 116, 139); font-size: 11px; font-weight: 700; cursor: help;">i</span>
+        </div>
+        <div data-dc-tpl="112" style="font-size: 12px; color: rgb(100, 116, 139); margin-bottom: 14px;">What if spending or coverage shifted in <span class="sc-interp">Washington</span>?</div>
+
+        <div data-dc-tpl="113" style="display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px;">
+          <div data-dc-tpl="114" style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 600;"><span data-dc-tpl="115">Adjust spending</span><span data-dc-tpl="116" style="color: rgb(31, 78, 121);"><span class="sc-interp">+0%</span></span></div>
+          <input data-dc-tpl="117" type="range" min="-30" max="30" step="1" aria-label="Adjust spending percent" value="0">
+        </div>
+        <div data-dc-tpl="118" style="display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px;">
+          <div data-dc-tpl="119" style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 600;"><span data-dc-tpl="120">Expand coverage</span><span data-dc-tpl="121" style="color: rgb(31, 78, 121);"><span class="sc-interp">+0 pts</span></span></div>
+          <input data-dc-tpl="122" type="range" min="0" max="20" step="1" aria-label="Expand coverage points" value="0">
+        </div>
+
+        <div data-dc-tpl="123" style="display: flex; gap: 10px; margin-bottom: 12px;">
+          <div data-dc-tpl="124" style="flex: 1 1 0%; background: rgb(240, 246, 252); border: 1px solid rgb(214, 230, 245); border-radius: 9px; padding: 10px 12px;">
+            <div data-dc-tpl="125" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600;">Projected DALYs averted</div>
+            <div data-dc-tpl="126" style="font-size: 18px; font-weight: 800; color: rgb(31, 78, 121); margin-top: 2px;"><span class="sc-interp">+0</span></div>
+            <div data-dc-tpl="127" style="font-size: 11px; color: rgb(100, 116, 139);">per 100k, vs. current</div>
+          </div>
+          <div data-dc-tpl="128" style="flex: 1 1 0%; background: rgb(240, 246, 252); border: 1px solid rgb(214, 230, 245); border-radius: 9px; padding: 10px 12px;">
+            <div data-dc-tpl="129" style="font-size: 11px; color: rgb(100, 116, 139); font-weight: 600;">Value rank</div>
+            <div data-dc-tpl="130" style="font-size: 18px; font-weight: 800; color: rgb(31, 78, 121); margin-top: 2px;"><span class="sc-interp">#32</span></div>
+            <div data-dc-tpl="131" style="font-size: 11px; color: rgb(100, 116, 139);"><span class="sc-interp">unchanged</span></div>
+          </div>
+        </div>
+        <div data-dc-tpl="132" style="font-size: 12.5px; line-height: 1.5; color: rgb(51, 65, 85); background: rgb(248, 250, 252); border-radius: 8px; padding: 10px 12px;"><span class="sc-interp">Adjusting spending by +0% and expanding coverage by 0 points is projected to avert about 0 more DALYs per 100k in Washington, and to hold its value rank at #32 among 51 states.</span></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div data-dc-tpl="133" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch;">
+
+    
+    <div data-dc-tpl="134" style="flex: 1 1 520px; background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 18px; min-width: 320px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+      <div data-dc-tpl="135" style="font-size: 14px; font-weight: 700;">Value frontier</div>
+      <div data-dc-tpl="136" style="font-size: 12px; color: rgb(100, 116, 139); margin-bottom: 8px;">Spending per case versus DALYs averted per case. Points above the line return more health than their spending predicts.</div>
+      <div data-dc-tpl="137" style="width: 100%;"><svg viewBox="0 0 560 320" width="100%" role="img" aria-label="Value frontier scatter plot" style="display: block; height: auto; max-height: 340px;"><line x1="58" x2="542" y1="278" y2="278" stroke="#eef2f7" stroke-width="1"></line><text x="50" y="281" text-anchor="end" font-size="9" fill="#94a3b8">0.03</text><line x1="58" x2="542" y1="212" y2="212" stroke="#eef2f7" stroke-width="1"></line><text x="50" y="215" text-anchor="end" font-size="9" fill="#94a3b8">0.05</text><line x1="58" x2="542" y1="145.99999999999997" y2="145.99999999999997" stroke="#eef2f7" stroke-width="1"></line><text x="50" y="148.99999999999997" text-anchor="end" font-size="9" fill="#94a3b8">0.06</text><line x1="58" x2="542" y1="80" y2="80" stroke="#eef2f7" stroke-width="1"></line><text x="50" y="83" text-anchor="end" font-size="9" fill="#94a3b8">0.08</text><line x1="58" x2="542" y1="14" y2="14" stroke="#eef2f7" stroke-width="1"></line><text x="50" y="17" text-anchor="end" font-size="9" fill="#94a3b8">0.10</text><text x="58" y="294" text-anchor="middle" font-size="9" fill="#94a3b8">$10k</text><text x="179" y="294" text-anchor="middle" font-size="9" fill="#94a3b8">$11k</text><text x="300" y="294" text-anchor="middle" font-size="9" fill="#94a3b8">$13k</text><text x="421" y="294" text-anchor="middle" font-size="9" fill="#94a3b8">$15k</text><text x="542" y="294" text-anchor="middle" font-size="9" fill="#94a3b8">$17k</text><line x1="58" x2="542" y1="278" y2="278" stroke="#cbd5e1" stroke-width="1"></line><line x1="58" x2="58" y1="14" y2="278" stroke="#cbd5e1" stroke-width="1"></line><line x1="58" y1="126.68168036243102" x2="542" y2="173.51014258988488" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6 4" opacity="0.8"></line><text x="538" y="167.51014258988488" text-anchor="end" font-size="9.5" fill="#1F4E79" font-weight="600">value frontier</text><circle cx="456.969191591349" cy="228.90883229286905" r="4.2" fill="rgb(222,79,57)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="165.06918765726223" cy="74.03443217047919" r="4.2" fill="rgb(54,161,87)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="197.0764508908487" cy="136.5259913933151" r="4.2" fill="rgb(192,205,123)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="233.88511987247463" cy="124.5983145516528" r="4.2" fill="rgb(194,205,124)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="149.28040371137809" cy="70.09790041163933" r="4.2" fill="rgb(33,154,82)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="467.6432216427255" cy="153.16553346875307" r="4.2" fill="rgb(239,155,100)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="453.70314389782925" cy="259.7931034482759" r="4.2" fill="rgb(215,48,39)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="353.67746951972686" cy="216.10195737399235" r="4.2" fill="rgb(230,116,77)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="133.6959912148655" cy="136.80974288792265" r="4.2" fill="rgb(149,191,112)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="155.48675584570253" cy="108.93313652797434" r="4.2" fill="rgb(112,179,102)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="238.7824860564537" cy="88.64026011161337" r="4.2" fill="rgb(136,187,109)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="107.70449609049227" cy="242.89392008374648" r="4.2" fill="rgb(239,156,100)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="508.8849509979058" cy="199.91548764204117" r="4.2" fill="rgb(226,99,68)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="208.06378735709083" cy="59.707459420926966" r="4.2" fill="rgb(64,164,90)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="516.0714285714284" cy="131.8041985669174" r="4.2" fill="rgb(241,164,105)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="310.2502352198005" cy="124.22242866973187" r="4.2" fill="rgb(237,218,134)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="472.473112952048" cy="87.97777909398965" r="4.2" fill="rgb(253,220,137)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="162.61024053919377" cy="159.05437566313776" r="4.2" fill="rgb(211,211,128)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="446.8447340375393" cy="191.6549703146853" r="4.2" fill="rgb(231,120,80)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="492.42790095617227" cy="95.11068703387357" r="4.2" fill="rgb(250,207,129)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="382.8066075800915" cy="238.43404906994763" r="4.2" fill="rgb(223,84,59)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="405.17998752483663" cy="150.49333291307784" r="4.2" fill="rgb(243,175,111)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="201.27501575004004" cy="226.0183245758642" r="4.2" fill="rgb(237,147,95)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="193.2437499650753" cy="54.17879030528903" r="4.2" fill="rgb(42,157,84)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="83.9285714285714" cy="163.8965447415804" r="4.2" fill="rgb(165,196,116)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="282.8403240397626" cy="205.64248572188234" r="4.2" fill="rgb(237,147,96)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="150.09525826467376" cy="241.67773683015116" r="4.2" fill="rgb(236,142,92)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="202.36424482423163" cy="101.83490740198906" r="4.2" fill="rgb(134,186,108)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="87.70763688901603" cy="194.08832841609083" r="4.2" fill="rgb(230,217,133)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="357.97553707941483" cy="176.8815198170343" r="4.2" fill="rgb(240,159,102)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="96.5434687979508" cy="149.59542218022136" r="4.2" fill="rgb(145,190,111)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="256.89794660150017" cy="132.6283199709041" r="4.2" fill="rgb(221,214,131)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="412.5056559884048" cy="76.90703992120001" r="4.2" fill="rgb(217,212,129)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="454.4911909719256" cy="236.85724803976655" r="4.2" fill="rgb(220,72,52)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="398.10532132134716" cy="232.44462302768187" r="4.2" fill="rgb(224,87,61)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="509.83986408945634" cy="208.77522999862748" r="4.2" fill="rgb(224,90,63)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="269.23333461724116" cy="114.60877681657519" r="4.2" fill="rgb(199,207,125)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="381.156414408707" cy="114.39963763419843" r="4.2" fill="rgb(254,223,138)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="140.8984542479427" cy="155.89595291503736" r="4.2" fill="rgb(191,204,123)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="256.4918534031846" cy="89.45645080872342" r="4.2" fill="rgb(150,191,112)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="243.58660733216638" cy="32.206896551724185" r="4.2" fill="rgb(45,158,85)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="464.8102080243004" cy="112.08174917906976" r="4.2" fill="rgb(248,198,124)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="158.6120592492278" cy="61.847823088853886" r="4.2" fill="rgb(26,152,80)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="222.26215470471777" cy="212.01185172727537" r="4.2" fill="rgb(240,159,102)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="364.7254432349491" cy="187.644509637519" r="4.2" fill="rgb(237,145,94)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="495.4935018165876" cy="164.70175983368335" r="4.2" fill="rgb(235,137,89)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="480.8637482282278" cy="185.01178662869427" r="4.2" fill="rgb(231,119,80)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="183.9421491787936" cy="136.126967063342" r="4.2" fill="rgb(183,202,121)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="166.29394887757985" cy="149.42226380089215" r="4.2" fill="rgb(196,206,124)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="141.89409399997828" cy="99.09913138121539" r="4.2" fill="rgb(82,170,95)" stroke="#fff" stroke-width="1" opacity="0.92"></circle><circle cx="476.1923392932287" cy="145.83498440450597" r="9" fill="none" stroke="#0f2742" stroke-width="2"></circle><circle cx="476.1923392932287" cy="145.83498440450597" r="6" fill="#2E75B6" stroke="#fff" stroke-width="1.5"></circle><text x="468.1923392932287" y="136.83498440450597" text-anchor="end" font-size="11" font-weight="700" fill="#0f2742">Washington</text><text x="300" y="316" text-anchor="middle" font-size="10.5" fill="#475569" font-weight="600">Spending per case</text><text x="14" y="146" text-anchor="middle" font-size="10.5" fill="#475569" font-weight="600" transform="rotate(-90 14 146)">DALYs averted per case</text></svg></div>
+    </div>
+
+    
+    <div data-dc-tpl="138" style="flex: 1 1 360px; background: rgb(255, 255, 255); border: 1px solid rgb(226, 232, 240); border-radius: 12px; box-shadow: none !important; padding: 18px; min-width: 300px; display: flex; flex-direction: column; gap: 16px; filter: drop-shadow(rgba(16, 24, 40, 0.06) 0px 1px 3px) !important;">
+      <div data-dc-tpl="139">
+        <div data-dc-tpl="140" style="font-size: 14px; font-weight: 700;">Spending by payer · <span class="sc-interp">Washington</span></div>
+        <div data-dc-tpl="141" style="font-size: 12px; color: rgb(100, 116, 139); margin-bottom: 10px;">Total <span class="sc-interp">$9.5B</span> · selected payers highlighted</div>
+        <div data-dc-tpl="142" style="display: flex; height: 26px; border-radius: 6px; overflow: hidden; border: 1px solid rgb(226, 232, 240);">
+          
+            <div data-dc-tpl="144" title="Medicare: $3.3B" style="width: 35%; background: rgb(31, 78, 121); opacity: 1; transition: width 0.25s;"></div>
+          
+            <div data-dc-tpl="144" title="Medicaid: $1.9B" style="width: 20%; background: rgb(46, 117, 182); opacity: 1; transition: width 0.25s;"></div>
+          
+            <div data-dc-tpl="144" title="Private: $3.3B" style="width: 35%; background: rgb(111, 168, 220); opacity: 1; transition: width 0.25s;"></div>
+          
+            <div data-dc-tpl="144" title="Out of pocket: $948M" style="width: 10%; background: rgb(169, 204, 232); opacity: 1; transition: width 0.25s;"></div>
+          
+        </div>
+        <div data-dc-tpl="145" style="display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 10px;">
+          
+            <div data-dc-tpl="147" style="display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: rgb(71, 85, 105); opacity: 1;">
+              <span data-dc-tpl="148" style="width: 10px; height: 10px; border-radius: 3px; background: rgb(31, 78, 121);"></span><span class="sc-interp">Medicare</span><span data-dc-tpl="149" style="font-weight: 600; color: rgb(30, 41, 59);"><span class="sc-interp">$3.3B</span></span>
+            </div>
+          
+            <div data-dc-tpl="147" style="display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: rgb(71, 85, 105); opacity: 1;">
+              <span data-dc-tpl="148" style="width: 10px; height: 10px; border-radius: 3px; background: rgb(46, 117, 182);"></span><span class="sc-interp">Medicaid</span><span data-dc-tpl="149" style="font-weight: 600; color: rgb(30, 41, 59);"><span class="sc-interp">$1.9B</span></span>
+            </div>
+          
+            <div data-dc-tpl="147" style="display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: rgb(71, 85, 105); opacity: 1;">
+              <span data-dc-tpl="148" style="width: 10px; height: 10px; border-radius: 3px; background: rgb(111, 168, 220);"></span><span class="sc-interp">Private</span><span data-dc-tpl="149" style="font-weight: 600; color: rgb(30, 41, 59);"><span class="sc-interp">$3.3B</span></span>
+            </div>
+          
+            <div data-dc-tpl="147" style="display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: rgb(71, 85, 105); opacity: 1;">
+              <span data-dc-tpl="148" style="width: 10px; height: 10px; border-radius: 3px; background: rgb(169, 204, 232);"></span><span class="sc-interp">Out of pocket</span><span data-dc-tpl="149" style="font-weight: 600; color: rgb(30, 41, 59);"><span class="sc-interp">$948M</span></span>
+            </div>
+          
+        </div>
+      </div>
+      <div data-dc-tpl="150" style="border-top: 1px solid rgb(241, 245, 249); padding-top: 14px;">
+        <div data-dc-tpl="151" style="font-size: 14px; font-weight: 700;">Value of care over time</div>
+        <div data-dc-tpl="152" style="font-size: 12px; color: rgb(100, 116, 139); margin-bottom: 6px;"><span class="sc-interp">Washington</span> · 2010 to 2023</div>
+        <div data-dc-tpl="153" style="width: 100%;"><svg viewBox="0 0 340 130" width="100%" role="img" aria-label="Value of care over time" style="display: block; height: auto; max-height: 150px;"><line x1="34" x2="326" y1="106" y2="106" stroke="#eef2f7" stroke-width="1"></line><text x="28" y="109" text-anchor="end" font-size="8.5" fill="#94a3b8">3</text><line x1="34" x2="326" y1="59" y2="59" stroke="#eef2f7" stroke-width="1"></line><text x="28" y="62" text-anchor="end" font-size="8.5" fill="#94a3b8">6</text><line x1="34" x2="326" y1="12" y2="12" stroke="#eef2f7" stroke-width="1"></line><text x="28" y="15" text-anchor="end" font-size="8.5" fill="#94a3b8">8</text><polyline points="34,81.66609457638273 56.46153846153847,48.991480220639936 78.92307692307693,66.97738290174789 101.38461538461539,89.4560922502553 123.84615384615385,46.310470464917685 146.30769230769232,80.55180140776233 168.76923076923077,38.18886923452182 191.23076923076923,19.357413663885595 213.6923076923077,82.94507016201698 236.15384615384616,65.52755341321381 258.61538461538464,18.769421600268544 281.0769230769231,95.82838146477012 303.53846153846155,103.46537612601898 326,85.77890122421958" fill="none" stroke="#1F4E79" stroke-width="2.2" stroke-linejoin="round"></polyline><circle cx="34" cy="81.66609457638273" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="56.46153846153847" cy="48.991480220639936" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="78.92307692307693" cy="66.97738290174789" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="101.38461538461539" cy="89.4560922502553" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="123.84615384615385" cy="46.310470464917685" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="146.30769230769232" cy="80.55180140776233" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="168.76923076923077" cy="38.18886923452182" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="191.23076923076923" cy="19.357413663885595" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="213.6923076923077" cy="82.94507016201698" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="236.15384615384616" cy="65.52755341321381" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="258.61538461538464" cy="18.769421600268544" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="281.0769230769231" cy="95.82838146477012" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="303.53846153846155" cy="103.46537612601898" r="2.4" fill="#1F4E79" stroke="#fff" stroke-width="0"></circle><circle cx="326" cy="85.77890122421958" r="4" fill="#2E75B6" stroke="#fff" stroke-width="1.5"></circle><text x="326" y="77.77890122421958" text-anchor="middle" font-size="10" font-weight="700" fill="#1F4E79">4.0</text><text x="34" y="124" text-anchor="start" font-size="9" fill="#94a3b8">2010</text><text x="326" y="124" text-anchor="end" font-size="9" fill="#94a3b8">2023</text></svg></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div data-dc-tpl="154" style="font-size: 11.5px; color: rgb(148, 163, 184); line-height: 1.6; padding: 4px 4px 8px;">
+    <strong data-dc-tpl="155" style="color: rgb(100, 116, 139);">Illustrative prototype · synthetic data only.</strong> Records are generated in the browser from a deterministic seed; no real patient, DEX, or GBD data is used.
+    valueScore is defined as DALYs averted per $1M spent: <code data-dc-tpl="156" style="background: rgb(232, 237, 243); padding: 1px 5px; border-radius: 4px;">value = (dalysAvertedPerCapita / spendingPerCapita) × 1,000,000</code>,
+    where dalysAverted is the modeled share of disease burden reduced by care and spendingPerCapita is spending per case times case prevalence. Higher value means more health produced per dollar.
+  </div></div></div></div></div>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  // ---- Static synthetic-data configuration ----
+  // CONDITIONS: national baselines so spending/burden differ realistically by disease.
+  CONDITIONS = [
+    {id:'type2_diabetes', label:'Type 2 diabetes',                spend:9000,  cases:9000, daly:1200, payer:[.35,.20,.35,.10]},
+    {id:'ischemic_heart_disease', label:'Ischemic heart disease', spend:14000, cases:6000, daly:2000, payer:[.45,.18,.30,.07]},
+    {id:'neoplasms', label:'Neoplasms (cancers)',                 spend:25000, cases:5000, daly:3000, payer:[.40,.18,.36,.06]},
+    {id:'copd', label:'Chronic obstructive pulmonary disease',    spend:8000,  cases:6000, daly:1400, payer:[.42,.24,.28,.06]},
+    {id:'chronic_kidney_disease', label:'Chronic kidney disease', spend:20000, cases:4000, daly:900,  payer:[.50,.22,.24,.04]},
+    {id:'stroke', label:'Stroke',                                 spend:16000, cases:2500, daly:1500, payer:[.46,.20,.29,.05]},
+    {id:'depressive_disorders', label:'Depressive disorders',     spend:4000,  cases:8000, daly:1300, payer:[.18,.30,.40,.12]},
+    {id:'low_back_pain', label:'Low back pain',                   spend:3000,  cases:13000,daly:1100, payer:[.25,.15,.45,.15]},
+    {id:'hiv', label:'HIV',                                       spend:22000, cases:400,  daly:200,  payer:[.20,.45,.25,.10]},
+    {id:'opioid_use_disorder', label:'Opioid use disorder',       spend:7000,  cases:1800, daly:800,  payer:[.15,.45,.30,.10]},
+  ];
+  PAYERS = [
+    {key:'medicare', label:'Medicare', color:'#1F4E79'},
+    {key:'medicaid', label:'Medicaid', color:'#2E75B6'},
+    {key:'private',  label:'Private',  color:'#6FA8DC'},
+    {key:'oop',      label:'Out of pocket', color:'#a9cce8'},
+  ];
+  // [abbr, name, fips, row, col, pop(millions)] -- tile-grid layout approximating U.S. geography
+  STATES = [
+    ['AK','Alaska','02',0,0,0.73],['ME','Maine','23',0,11,1.39],
+    ['VT','Vermont','50',1,10,0.65],['NH','New Hampshire','33',1,11,1.40],
+    ['WA','Washington','53',2,1,7.80],['ID','Idaho','16',2,2,1.96],['MT','Montana','30',2,3,1.12],['ND','North Dakota','38',2,4,0.78],['MN','Minnesota','27',2,5,5.70],['WI','Wisconsin','55',2,6,5.90],['MI','Michigan','26',2,8,10.0],['NY','New York','36',2,9,19.6],['MA','Massachusetts','25',2,10,7.00],['RI','Rhode Island','44',2,11,1.10],
+    ['OR','Oregon','41',3,1,4.20],['NV','Nevada','32',3,2,3.20],['WY','Wyoming','56',3,3,0.58],['SD','South Dakota','46',3,4,0.92],['IA','Iowa','19',3,5,3.20],['IL','Illinois','17',3,6,12.6],['IN','Indiana','18',3,7,6.90],['OH','Ohio','39',3,8,11.8],['PA','Pennsylvania','42',3,9,13.0],['NJ','New Jersey','34',3,10,9.30],['CT','Connecticut','09',3,11,3.60],
+    ['CA','California','06',4,1,39.0],['UT','Utah','49',4,2,3.40],['CO','Colorado','08',4,3,5.90],['NE','Nebraska','31',4,4,1.97],['MO','Missouri','29',4,5,6.20],['KY','Kentucky','21',4,6,4.50],['WV','West Virginia','54',4,7,1.77],['VA','Virginia','51',4,8,8.70],['MD','Maryland','24',4,9,6.20],['DE','Delaware','10',4,10,1.00],
+    ['AZ','Arizona','04',5,2,7.40],['NM','New Mexico','35',5,3,2.10],['KS','Kansas','20',5,4,2.94],['AR','Arkansas','05',5,5,3.00],['TN','Tennessee','47',5,6,7.10],['NC','North Carolina','37',5,7,10.7],['SC','South Carolina','45',5,8,5.30],['DC','District of Columbia','11',5,9,0.67],
+    ['OK','Oklahoma','40',6,4,4.00],['LA','Louisiana','22',6,5,4.60],['MS','Mississippi','28',6,6,2.94],['AL','Alabama','01',6,7,5.10],['GA','Georgia','13',6,8,11.0],
+    ['HI','Hawaii','15',7,0,1.44],['TX','Texas','48',7,3,30.5],['FL','Florida','12',7,9,22.6],
+  ];
+
+  state = {
+    condition:'type2_diabetes', year:2023, metric:'value',
+    payers:{medicare:true, medicaid:true, private:true, oop:true},
+    geoLevel:'state', selectedFips:'53', hoveredFips:null,
+    spendPct:0, coveragePts:0, infoOpen:false,
+  };
+
+  // ---- deterministic RNG ----
+  hash(str){ let h=2166136261>>>0; for(let i=0;i<str.length;i++){ h^=str.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+  rng(seed){ let s=seed>>>0; return function(){ s=(s+0x6D2B79F5)|0; let t=Math.imul(s^(s>>>15),1|s); t=(t+Math.imul(t^(t>>>7),61|t))^t; return ((t^(t>>>14))>>>0)/4294967296; }; }
+  clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+
+  condObj(){ return this.CONDITIONS.find(c=>c.id===this.state.condition) || this.CONDITIONS[0]; }
+  condIdx(){ return this.CONDITIONS.findIndex(c=>c.id===this.state.condition); }
+  payerSum(){ const c=this.condObj(); let s=0; this.PAYERS.forEach((p,i)=>{ if(this.state.payers[p.key]) s+=c.payer[i]; }); return s; }
+
+  // ---- core metric model for one unit (state or county) ----
+  // valueScore = DALYs averted per $1M spent = (dalysAvertedPerCapita / spendPerCapita) * 1e6
+  genMetrics(seedKey, year, payerSum, pop){
+    const c=this.condObj(); const ci=this.condIdx();
+    const r=this.rng(this.hash(seedKey+'|'+ci+'|'+year));
+    const sF=0.75+r()*0.5, eF=0.70+r()*0.6, caF=0.70+r()*0.6, dF=0.85+r()*0.3;
+    const yf=year-2010; const infl=Math.pow(1.03,yf);
+    const spendingPerCaseGross=c.spend*sF*infl;
+    const spendingPerCase=spendingPerCaseGross*payerSum;          // portion paid by selected payers
+    const casesPer100k=c.cases*caF*(1+0.004*yf);
+    const dalysPer100k=c.daly*dF*(1-0.006*yf);
+    const deathsPer100k=dalysPer100k*(0.10+r()*0.10);
+    const avertFrac=this.clamp(0.18+0.22*eF+0.008*yf,0.10,0.60);  // care effectiveness
+    const dalysAvertedPer100k=dalysPer100k*avertFrac;
+    const dalysAvertedPerCase=dalysAvertedPer100k/casesPer100k;
+    const spendPerCapita=spendingPerCase*casesPer100k/100000;
+    const dalysAvertedPerCapita=dalysAvertedPer100k/100000;
+    const valueScore=spendPerCapita>0 ? (dalysAvertedPerCapita/spendPerCapita)*1e6 : 0;
+    const totalSpending=spendPerCapita*pop*1e6;
+    const totalDalys=dalysPer100k/100000*pop*1e6;
+    return {spendingPerCase,casesPer100k,deathsPer100k,dalysPer100k,dalysAvertedPer100k,dalysAvertedPerCase,spendPerCapita,valueScore,totalSpending,totalDalys};
+  }
+
+  // unit list for the active geography level
+  units(){
+    if(this.state.geoLevel==='county'){
+      const st=this.STATES.find(s=>s[2]===this.selStateFips()) || this.STATES[0];
+      const n=Math.max(9, Math.min(24, Math.round(6+st[5]*1.1)));
+      const cols=Math.ceil(Math.sqrt(n)); const out=[];
+      for(let i=0;i<n;i++){
+        out.push({abbr:'C'+(i+1), name:st[1]+' \u2014 County '+(i+1), fips:st[2]+String(i+1).padStart(3,'0'),
+          row:Math.floor(i/cols), col:i%cols, pop:Math.max(0.04, st[5]/n*(0.5+this.rng(this.hash(st[0]+'c'+i))()*1.0)),
+          seedKey:st[0]+'-co'+i, level:'county'});
+      }
+      return {list:out, cols, rows:Math.ceil(n/cols)};
+    }
+    const list=this.STATES.map(s=>({abbr:s[0],name:s[1],fips:s[2],row:s[3],col:s[4],pop:s[5],seedKey:s[0],level:'state'}));
+    return {list, cols:12, rows:8};
+  }
+  selStateFips(){ // the state whose counties we drill into
+    if(this.state.selectedFips && this.state.selectedFips.length<=2 && this.STATES.some(s=>s[2]===this.state.selectedFips)) return this.state.selectedFips;
+    // selectedFips might be a county fips; map back to its state (first 2 chars)
+    const pre=(this.state.selectedFips||'53').slice(0,2);
+    return this.STATES.some(s=>s[2]===pre)?pre:'53';
+  }
+
+  metricVal(m,mt){ return mt==='value'?m.valueScore : mt==='spend'?m.spendingPerCase : m.dalysAvertedPerCase; }
+
+  // color scales
+  vColor(t){ // diverging red->yellow->green
+    t=this.clamp(t,0,1);
+    const a=[215,48,39],b=[254,224,139],g=[26,152,80];
+    let c; if(t<0.5){ const k=t/0.5; c=a.map((v,i)=>Math.round(v+(b[i]-v)*k)); } else { const k=(t-0.5)/0.5; c=b.map((v,i)=>Math.round(v+(g[i]-v)*k)); }
+    return 'rgb('+c[0]+','+c[1]+','+c[2]+')';
+  }
+  sColor(t){ // sequential light->deep blue
+    t=this.clamp(t,0,1); const a=[222,235,247],b=[31,78,121];
+    const c=a.map((v,i)=>Math.round(v+(b[i]-v)*t)); return 'rgb('+c[0]+','+c[1]+','+c[2]+')';
+  }
+  colorFor(t,mt){ return mt==='value'?this.vColor(t):this.sColor(t); }
+  textOn(rgb){ const m=rgb.match(/\d+/g).map(Number); const lum=(0.299*m[0]+0.587*m[1]+0.114*m[2]); return lum>150?'#1e293b':'#ffffff'; }
+
+  fmtMoney(n){ if(n>=1e9) return '$'+(n/1e9).toFixed(n/1e9>=10?0:1)+'B'; if(n>=1e6) return '$'+(n/1e6).toFixed(0)+'M'; if(n>=1e3) return '$'+(n/1e3).toFixed(0)+'K'; return '$'+Math.round(n); }
+  fmtNum(n){ if(n>=1e6) return (n/1e6).toFixed(1)+'M'; if(n>=1e3) return (n/1e3).toFixed(0)+'K'; return Math.round(n).toString(); }
+  fmtMetric(mt,v){ if(mt==='value') return v.toFixed(1); if(mt==='spend') return '$'+Math.round(v).toLocaleString(); return v.toFixed(3); }
+  metricLabel(mt){ return mt==='value'?'Value of care':mt==='spend'?'Spending per case':'DALYs averted per case'; }
+
+  // ---- handlers ----
+  setCondition=(e)=>this.setState({condition:e.target.value});
+  setYear=(e)=>this.setState({year:parseInt(e.target.value,10)});
+  setMetric=(m)=>this.setState({metric:m});
+  togglePayer=(k)=>this.setState(s=>{ const p={...s.payers,[k]:!s.payers[k]}; if(!Object.values(p).some(Boolean)) p[k]=true; return {payers:p}; });
+  setGeo=(g)=>this.setState(s=>{ if(g===s.geoLevel) return null; if(g==='county'){ return {geoLevel:'county', selectedFips:this.selStateFips()+'001'}; } return {geoLevel:'state', selectedFips:this.selStateFips()}; });
+  backToStates=()=>this.setState(s=>({geoLevel:'state', selectedFips:this.selStateFips()}));
+  selectRegion=(fips,level)=>this.setState({selectedFips:fips});
+  setSpendPct=(e)=>this.setState({spendPct:parseInt(e.target.value,10)});
+  setCoveragePts=(e)=>this.setState({coveragePts:parseInt(e.target.value,10)});
+  toggleInfo=()=>this.setState(s=>({infoOpen:!s.infoOpen}));
+  reset=()=>this.setState({condition:'type2_diabetes',year:2023,metric:'value',payers:{medicare:true,medicaid:true,private:true,oop:true},geoLevel:'state',selectedFips:'53',spendPct:0,coveragePts:0,hoveredFips:null});
+
+  // ---- derived computation with memo (excludes hover) ----
+  derive(){
+    const s=this.state; const mt=s.metric; const ps=this.payerSum();
+    const sig=[s.condition,s.year,mt,JSON.stringify(s.payers),s.geoLevel,s.selectedFips,s.spendPct,s.coveragePts].join('|');
+    if(this._cache && this._cache.sig===sig) return this._cache.data;
+
+    const {list,cols,rows}=this.units();
+    const recs=list.map(u=>({...u, m:this.genMetrics(u.seedKey,s.year,ps,u.pop)}));
+    const recsPrev=list.map(u=>({...u, m:this.genMetrics(u.seedKey,s.year-1,ps,u.pop)}));
+
+    // ranks
+    const byValue=[...recs].sort((a,b)=>b.m.valueScore-a.m.valueScore);
+    const valueRank={}; byValue.forEach((r,i)=>valueRank[r.fips]=i+1);
+    const byMetric=[...recs].sort((a,b)=>this.metricVal(b.m,mt)-this.metricVal(a.m,mt));
+    const metricRank={}; byMetric.forEach((r,i)=>metricRank[r.fips]=i+1);
+    const prevByVal=[...recsPrev].sort((a,b)=>b.m.valueScore-a.m.valueScore);
+    const prevRank={}; prevByVal.forEach((r,i)=>prevRank[r.fips]=i+1);
+
+    const mvals=recs.map(r=>this.metricVal(r.m,mt));
+    const minM=Math.min(...mvals), maxM=Math.max(...mvals);
+    const norm=(v)=>maxM>minM?(v-minM)/(maxM-minM):0.5;
+
+    const N=recs.length;
+    const tile=s.geoLevel==='county'?Math.max(40,Math.min(64,Math.floor(560/Math.max(cols,4)))):54;
+    const step=tile+6;
+    const sel=recs.find(r=>r.fips===s.selectedFips) || recs[0];
+
+    const regions=recs.map(r=>{
+      const t=norm(this.metricVal(r.m,mt));
+      const col=this.colorFor(t,mt); const tc=this.textOn(col);
+      const isSel=r.fips===sel.fips;
+      return {
+        fips:r.fips, abbr:r.abbr, name:r.name, level:r.level,
+        rankText:'#'+metricRank[r.fips], 
+        rankStyle:'font-size:'+(tile<48?8:9)+'px;font-weight:600;opacity:.78;margin-top:1px;color:'+tc,
+        ariaLabel:r.name+'. '+this.metricLabel(mt)+' '+this.fmtMetric(mt,this.metricVal(r.m,mt))+'. Rank '+metricRank[r.fips]+' of '+N+(isSel?'. Selected':''),
+        style:'position:absolute;left:'+(r.col*step)+'px;top:'+(r.row*step)+'px;width:'+tile+'px;height:'+tile+'px;border-radius:7px;background:'+col+';color:'+tc+';display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:'+(tile<48?11:12.5)+'px;font-weight:700;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease;border:'+(isSel?'2.5px solid #0f2742':'1px solid rgba(255,255,255,.55)')+';box-shadow:'+(isSel?'0 0 0 3px rgba(46,117,182,.35),0 4px 10px rgba(0,0,0,.18)':'none')+';z-index:'+(isSel?3:1),
+        onClick:()=>this.selectRegion(r.fips,r.level),
+        onKey:(e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); this.selectRegion(r.fips,r.level); } },
+        onEnter:()=>this.setState({hoveredFips:r.fips}),
+        onLeave:()=>this.setState({hoveredFips:null}),
+        _rec:r, _col:r.col, _row:r.row, _step:step, _rank:valueRank[r.fips], _mrank:metricRank[r.fips],
+      };
+    });
+
+    // benchmark: 5 nearest peers by valueScore + selected
+    const peers=recs.filter(r=>r.fips!==sel.fips).map(r=>({r,d:Math.abs(r.m.valueScore-sel.m.valueScore)})).sort((a,b)=>a.d-b.d).slice(0,5).map(x=>x.r);
+    const benchSet=[sel,...peers];
+    const benchMax=Math.max(...benchSet.map(r=>this.metricVal(r.m,mt)));
+    const benchSorted=[...benchSet].sort((a,b)=>this.metricVal(b.m,mt)-this.metricVal(a.m,mt));
+    const benchmark=benchSorted.map(r=>{ const isSel=r.fips===sel.fips; const v=this.metricVal(r.m,mt);
+      return {name:(isSel?'\u25B8 ':'')+r.name, pct:benchMax>0?(v/benchMax*100):0, color:isSel?'#2E75B6':'#cbd5e1',
+        labelColor:isSel?'#1F4E79':'#475569', weight:isSel?'700':'500', valueText:this.fmtMetric(mt,v)};
+    });
+
+    // KPI deltas
+    const sum=(arr,f)=>arr.reduce((a,r)=>a+f(r),0);
+    const totSpend=sum(recs,r=>r.m.totalSpending), totSpendP=sum(recsPrev,r=>r.m.totalSpending);
+    const totDaly=sum(recs,r=>r.m.totalDalys), totDalyP=sum(recsPrev,r=>r.m.totalDalys);
+    const totPop=sum(recs,r=>r.pop);
+    const natVal=sum(recs,r=>r.m.valueScore*r.pop)/totPop, natValP=sum(recsPrev,r=>r.m.valueScore*r.pop)/sum(recsPrev,r=>r.pop);
+    const pct=(a,b)=>b!==0?((a-b)/b*100):0;
+    const mkDelta=(p,goodUp)=>{ const up=p>=0; const good=goodUp?up:!up; return {arrow:up?'\u25B2':'\u25BC', color:good?'#16a34a':'#dc2626', text:(up?'+':'')+p.toFixed(1)+'%'}; };
+    const dSpend=mkDelta(pct(totSpend,totSpendP),false);
+    const dDaly=mkDelta(pct(totDaly,totDalyP),false);
+    const dVal=mkDelta(pct(natVal,natValP),true);
+    const selRank=valueRank[sel.fips], selRankP=prevRank[sel.fips];
+    const rankImproved=selRank<selRankP; const rankDiff=selRankP-selRank;
+    const unitWord=s.geoLevel==='county'?'counties':'states';
+    const kpis=[
+      {label:'Total spending ('+unitWord+')', value:this.fmtMoney(totSpend), delta:dSpend.text, deltaArrow:dSpend.arrow, deltaColor:dSpend.color, deltaSub:'vs '+(s.year-1)},
+      {label:'Total disease burden (DALYs)', value:this.fmtNum(totDaly), delta:dDaly.text, deltaArrow:dDaly.arrow, deltaColor:dDaly.color, deltaSub:'vs '+(s.year-1)},
+      {label:'National value score', value:natVal.toFixed(1), delta:dVal.text, deltaArrow:dVal.arrow, deltaColor:dVal.color, deltaSub:'vs '+(s.year-1)},
+      {label:sel.name.split(' \u2014 ')[0]+' value rank', value:'#'+selRank, delta:rankDiff===0?'no change':(rankImproved?'up ':'down ')+Math.abs(rankDiff), deltaArrow:rankDiff===0?'\u2014':(rankImproved?'\u25B2':'\u25BC'), deltaColor:rankDiff===0?'#94a3b8':(rankImproved?'#16a34a':'#dc2626'), deltaSub:'of '+N},
+    ];
+
+    // payer breakdown for selected (full, payerSum=1)
+    const full=this.genMetrics(sel.seedKey,s.year,1,sel.pop);
+    const c=this.condObj();
+    const payerBars=this.PAYERS.map((p,i)=>{ const amt=full.totalSpending*c.payer[i]; const active=s.payers[p.key];
+      return {key:p.key,label:p.label,color:p.color,pct:(c.payer[i]*100),opacity:active?1:0.28,amount:this.fmtMoney(amt),title:p.label+': '+this.fmtMoney(amt)}; });
+    const payerTotalLabel=this.fmtMoney(full.totalSpending);
+
+    // scenario
+    const base=sel.m;
+    const baseAverted=base.dalysAvertedPer100k;
+    const newAverted=baseAverted*(1+0.25*s.spendPct/100)*(1+0.012*s.coveragePts);
+    const newSpendPC=base.spendPerCapita*(1+s.spendPct/100)*(1+0.005*s.coveragePts);
+    const newValue=newSpendPC>0?(newAverted/100000/newSpendPC)*1e6:0;
+    const vlist=recs.map(r=>r.fips===sel.fips?newValue:r.m.valueScore).sort((a,b)=>b-a);
+    const newRank=vlist.indexOf(newValue)+1;
+    const dalysDelta=newAverted-baseAverted;
+    const stName=sel.name.split(' \u2014 ')[0];
+    const dir=dalysDelta>=0?'avert about '+Math.abs(dalysDelta).toFixed(0)+' more':'avert about '+Math.abs(dalysDelta).toFixed(0)+' fewer';
+    const rankPhrase=newRank<selRank?('improve its value rank from #'+selRank+' to #'+newRank):newRank>selRank?('move its value rank from #'+selRank+' to #'+newRank):('hold its value rank at #'+selRank);
+    const scenarioSentence='Adjusting spending by '+(s.spendPct>=0?'+':'')+s.spendPct+'% and expanding coverage by '+s.coveragePts+' point'+(s.coveragePts===1?'':'s')+' is projected to '+dir+' DALYs per 100k in '+stName+', and to '+rankPhrase+' among '+N+' '+unitWord+'.';
+
+    const scatterEl=this.buildScatter(recs, sel.fips, norm, minM, maxM, mt);
+    const trendEl=this.buildTrend(sel, ps);
+
+    // legend
+    let legend;
+    if(mt==='value'){
+      legend={gradient:'linear-gradient(90deg,'+this.vColor(0)+','+this.vColor(0.5)+','+this.vColor(1)+')', lowLabel:'Lower value', highLabel:'Higher value', note:this.fmtMetric(mt,minM)+' to '+this.fmtMetric(mt,maxM)};
+    } else {
+      legend={gradient:'linear-gradient(90deg,'+this.sColor(0)+','+this.sColor(1)+')', lowLabel:this.fmtMetric(mt,minM), highLabel:this.fmtMetric(mt,maxM), note:mt==='spend'?'Sequential scale':'Sequential scale'};
+    }
+
+    const data={
+      regions, mapW:cols*step-6, mapH:rows*step-6,
+      kpis, benchmark, payerBars, payerTotalLabel, scatterEl, trendEl, legend,
+      selectedName:stName, sel, valueRank, metricRank, step,
+      scenarioDalys:(dalysDelta>=0?'+':'')+dalysDelta.toFixed(0), scenarioRank:'#'+newRank,
+      scenarioRankSub:newRank<selRank?'up '+(selRank-newRank)+' from #'+selRank:newRank>selRank?'down '+(newRank-selRank)+' from #'+selRank:'unchanged',
+      scenarioSentence, N, unitWord,
+    };
+    this._cache={sig,data};
+    return data;
+  }
+
+  buildScatter(recs, selFips, norm, minM, maxM, mt){
+    const e=React.createElement; const W=560,H=320, ml=58,mr=18,mt2=14,mb=42, pw=W-ml-mr, ph=H-mt2-mb;
+    const xs=recs.map(r=>r.m.spendingPerCase), ys=recs.map(r=>r.m.dalysAvertedPerCase);
+    const minx=Math.min(...xs), maxx=Math.max(...xs), miny=Math.min(...ys), maxy=Math.max(...ys);
+    const padx=(maxx-minx)*0.06||1, pady=(maxy-miny)*0.08||1;
+    const x0=minx-padx, x1=maxx+padx, y0=Math.max(0,miny-pady), y1=maxy+pady;
+    const px=v=>ml+(v-x0)/(x1-x0)*pw, py=v=>mt2+ph-(v-y0)/(y1-y0)*ph;
+    // least-squares fit
+    const n=recs.length; const mx=xs.reduce((a,b)=>a+b,0)/n, my=ys.reduce((a,b)=>a+b,0)/n;
+    let num=0,den=0; for(let i=0;i<n;i++){ num+=(xs[i]-mx)*(ys[i]-my); den+=(xs[i]-mx)*(xs[i]-mx); }
+    const slope=den?num/den:0, icpt=my-slope*mx;
+    const fy0=slope*x0+icpt, fy1=slope*x1+icpt;
+    const ticksX=[0,0.25,0.5,0.75,1].map(t=>x0+(x1-x0)*t);
+    const ticksY=[0,0.25,0.5,0.75,1].map(t=>y0+(y1-y0)*t);
+    const sel=recs.find(r=>r.fips===selFips);
+    const els=[];
+    // gridlines + axes
+    ticksY.forEach((t,i)=>{ const yy=py(t); els.push(e('line',{key:'gy'+i,x1:ml,x2:W-mr,y1:yy,y2:yy,stroke:'#eef2f7',strokeWidth:1}));
+      els.push(e('text',{key:'tly'+i,x:ml-8,y:yy+3,textAnchor:'end',fontSize:9,fill:'#94a3b8'},t.toFixed(2))); });
+    ticksX.forEach((t,i)=>{ const xx=px(t); els.push(e('text',{key:'tlx'+i,x:xx,y:H-mb+16,textAnchor:'middle',fontSize:9,fill:'#94a3b8'},'$'+(t>=1000?(t/1000).toFixed(0)+'k':Math.round(t)))); });
+    els.push(e('line',{key:'ax',x1:ml,x2:W-mr,y1:mt2+ph,y2:mt2+ph,stroke:'#cbd5e1',strokeWidth:1}));
+    els.push(e('line',{key:'ay',x1:ml,x2:ml,y1:mt2,y2:mt2+ph,stroke:'#cbd5e1',strokeWidth:1}));
+    // frontier line
+    els.push(e('line',{key:'fit',x1:px(x0),y1:py(fy0),x2:px(x1),y2:py(fy1),stroke:'#1F4E79',strokeWidth:2,strokeDasharray:'6 4',opacity:.8}));
+    els.push(e('text',{key:'fitlabel',x:px(x1)-4,y:py(fy1)-6,textAnchor:'end',fontSize:9.5,fill:'#1F4E79',fontWeight:600},'value frontier'));
+    // points
+    recs.forEach((r,i)=>{ if(r.fips===selFips) return; const t=norm(this.metricVal(r.m,mt));
+      els.push(e('circle',{key:'p'+i,cx:px(r.m.spendingPerCase),cy:py(r.m.dalysAvertedPerCase),r:4.2,fill:this.colorFor(t,mt),stroke:'#fff',strokeWidth:1,opacity:.92})); });
+    if(sel){ const cx=px(sel.m.spendingPerCase), cy=py(sel.m.dalysAvertedPerCase);
+      els.push(e('circle',{key:'selr',cx,cy,r:9,fill:'none',stroke:'#0f2742',strokeWidth:2}));
+      els.push(e('circle',{key:'sel',cx,cy,r:6,fill:'#2E75B6',stroke:'#fff',strokeWidth:1.5}));
+      const lx=cx>W-120?cx-8:cx+10, anchor=cx>W-120?'end':'start';
+      els.push(e('text',{key:'sellbl',x:lx,y:cy-9,textAnchor:anchor,fontSize:11,fontWeight:700,fill:'#0f2742'},sel.name.split(' \u2014 ')[0])); }
+    // axis titles
+    els.push(e('text',{key:'xt',x:ml+pw/2,y:H-4,textAnchor:'middle',fontSize:10.5,fill:'#475569',fontWeight:600},'Spending per case'));
+    els.push(e('text',{key:'yt',x:14,y:mt2+ph/2,textAnchor:'middle',fontSize:10.5,fill:'#475569',fontWeight:600,transform:'rotate(-90 14 '+(mt2+ph/2)+')'},'DALYs averted per case'));
+    return e('svg',{viewBox:'0 0 '+W+' '+H,width:'100%',style:{display:'block',height:'auto',maxHeight:'340px'},role:'img','aria-label':'Value frontier scatter plot'},els);
+  }
+
+  buildTrend(sel, ps){
+    const e=React.createElement; const W=340,H=130, ml=34,mr=14,mt=12,mb=24, pw=W-ml-mr, ph=H-mt-mb;
+    const years=[]; for(let y=2010;y<=2023;y++) years.push(y);
+    const vals=years.map(y=>this.genMetrics(sel.seedKey,y,ps,sel.pop).valueScore);
+    const miny=Math.min(...vals)*0.95, maxy=Math.max(...vals)*1.05;
+    const px=i=>ml+i/(years.length-1)*pw, py=v=>mt+ph-(v-miny)/(maxy-miny||1)*ph;
+    const els=[];
+    [miny,(miny+maxy)/2,maxy].forEach((t,i)=>{ const yy=py(t); els.push(e('line',{key:'g'+i,x1:ml,x2:W-mr,y1:yy,y2:yy,stroke:'#eef2f7',strokeWidth:1}));
+      els.push(e('text',{key:'l'+i,x:ml-6,y:yy+3,textAnchor:'end',fontSize:8.5,fill:'#94a3b8'},t.toFixed(0))); });
+    // area + line
+    const pts=vals.map((v,i)=>px(i)+','+py(v));
+    els.push(e('polyline',{key:'ln',points:pts.join(' '),fill:'none',stroke:'#1F4E79',strokeWidth:2.2,strokeLinejoin:'round'}));
+    const cur=this.state.year-2010;
+    vals.forEach((v,i)=>{ els.push(e('circle',{key:'d'+i,cx:px(i),cy:py(v),r:i===cur?4:2.4,fill:i===cur?'#2E75B6':'#1F4E79',stroke:'#fff',strokeWidth:i===cur?1.5:0})); });
+    els.push(e('text',{key:'cy',x:px(cur),y:py(vals[cur])-8,textAnchor:'middle',fontSize:10,fontWeight:700,fill:'#1F4E79'},vals[cur].toFixed(1)));
+    [0,years.length-1].forEach((i)=>els.push(e('text',{key:'yr'+i,x:px(i),y:H-6,textAnchor:i===0?'start':'end',fontSize:9,fill:'#94a3b8'},years[i])));
+    return e('svg',{viewBox:'0 0 '+W+' '+H,width:'100%',style:{display:'block',height:'auto',maxHeight:'150px'},role:'img','aria-label':'Value of care over time'},els);
+  }
+
+  renderVals(){
+    const s=this.state; const mt=s.metric; const d=this.derive();
+    // hovered tooltip
+    let hovered=null;
+    if(s.hoveredFips){ const reg=d.regions.find(r=>r.fips===s.hoveredFips);
+      if(reg){ const r=reg._rec; const flip=reg._col>8; const step=reg._step;
+        const left=flip?(reg._col*step-178):(reg._col*step+step+6);
+        const top=Math.max(0,reg._row*step-6);
+        hovered={ name:r.name, totalSpending:this.fmtMoney(r.m.totalSpending), dalys:this.fmtNum(r.m.totalDalys),
+          value:r.m.valueScore.toFixed(1), rank:'#'+reg._rank+' of '+d.N,
+          tipStyle:'position:absolute;left:'+left+'px;top:'+top+'px;width:172px;background:#0f2742;color:#fff;border-radius:9px;padding:10px 12px;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:10;pointer-events:none;' };
+      }
+    }
+    const conditionOptions=this.CONDITIONS.map(c=>({value:c.id,label:c.label}));
+    const segBase='font-family:inherit;font-size:12px;font-weight:600;padding:8px 12px;border:none;cursor:pointer;white-space:nowrap;';
+    const metricOptions=[['value','Value of care'],['spend','Spending per case'],['daly','DALYs averted per case']].map(([v,l],i)=>{
+      const active=mt===v; return {label:l, active, onClick:()=>this.setMetric(v),
+        style:segBase+'background:'+(active?'#1F4E79':'#fff')+';color:'+(active?'#fff':'#475569')+';'+(i>0?'border-left:1px solid #cbd5e1;':'')};
+    });
+    const geoOptions=[['state','State'],['county','County']].map(([v,l],i)=>{ const active=s.geoLevel===v;
+      return {label:l, active, onClick:()=>this.setGeo(v), style:segBase+'background:'+(active?'#1F4E79':'#fff')+';color:'+(active?'#fff':'#475569')+';'+(i>0?'border-left:1px solid #cbd5e1;':'')}; });
+    const payerChips=this.PAYERS.map(p=>{ const active=s.payers[p.key];
+      return {label:p.label, active, onClick:()=>this.togglePayer(p.key),
+        style:'font-family:inherit;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:7px 11px;border-radius:999px;cursor:pointer;border:1px solid '+(active?'#1F4E79':'#cbd5e1')+';background:'+(active?'#eef4fb':'#fff')+';color:'+(active?'#1F4E79':'#94a3b8')+';',
+        dotStyle:'width:9px;height:9px;border-radius:3px;background:'+(active?p.color:'#cbd5e1')+';flex:none;'}; });
+
+    return {
+      ...d,
+      infoOpen:s.infoOpen, toggleInfo:this.toggleInfo,
+      condition:s.condition, conditionOptions, setCondition:this.setCondition,
+      year:s.year, setYear:this.setYear, yearMinLabel:'2010', yearMaxLabel:'2023',
+      metricOptions, payerChips, geoOptions, reset:this.reset,
+      inCounty:s.geoLevel==='county', backToStates:this.backToStates,
+      mapTitle:this.metricLabel(mt)+(s.geoLevel==='county'?' \u00B7 counties of '+d.selectedName:' by state'),
+      mapSubtitle:this.condObj().label+' \u00B7 '+s.year+(s.geoLevel==='state'?' \u00B7 click a tile to select; switch to County to drill in':' \u00B7 synthetic county estimates'),
+      hovered,
+      benchSubtitle:d.sel.name.split(' \u2014 ')[0]+' vs. five value-matched peers \u00B7 '+this.metricLabel(mt),
+      spendPct:s.spendPct, spendPctLabel:(s.spendPct>=0?'+':'')+s.spendPct+'%', setSpendPct:this.setSpendPct,
+      coveragePts:s.coveragePts, coverageLabel:'+'+s.coveragePts+' pts', setCoveragePts:this.setCoveragePts,
+      scenarioFormula:'newDALYsAverted = base \u00D7 (1 + 0.25 \u00D7 spend% ) \u00D7 (1 + 0.012 \u00D7 coveragePts); newSpending = base \u00D7 (1 + spend%) \u00D7 (1 + 0.005 \u00D7 coveragePts); value = DALYs averted per $1M. Transparent linear-elasticity model for illustration only.',
+    };
+  }
+}
+</script>
+<script>
+(async () => {
+  if (!document.title || !document.title.trim()) document.title = "Health Value Engine";
+  // Prepend so page-supplied @page / break rules (deck-stage's margin:0,
+  // author CSS) keep source-order precedence over the baseline.
+  const baseCss = document.createElement('style');
+  baseCss.textContent = "@media print {\n  @page { margin: 0.5cm; }\n  figure, table { break-inside: avoid; }\n  *, *::before, *::after {\n    print-color-adjust: exact; -webkit-print-color-adjust: exact;\n    backdrop-filter: none !important; -webkit-backdrop-filter: none !important;\n    animation-delay: -99s !important; animation-duration: .001s !important;\n    animation-iteration-count: 1 !important; animation-fill-mode: both !important;\n    animation-play-state: running !important; transition-duration: 0s !important;\n  }\n}";
+  document.head.prepend(baseCss);
+  if (document.readyState === 'loading') {
+    await new Promise((r) => document.addEventListener('DOMContentLoaded', r, { once: true }));
+  }
+  let ds = document.querySelector('deck-stage');
+  // whenDefined never resolves when nothing registers the element, so only
+  // await it when a <deck-stage> tag exists (and race a timeout regardless).
+  if (ds && !customElements.get('deck-stage')) {
+    try {
+      await Promise.race([
+        customElements.whenDefined('deck-stage'),
+        new Promise((r) => setTimeout(r, 3000)),
+      ]);
+    } catch (e) {}
+    ds = document.querySelector('deck-stage');
+  }
+  // dc-runtime assigns window.DCLogic at init and mounts into #dc-root on
+  // DOMContentLoaded; settle on that subtree so React has rendered before
+  // print(). Non-DC pages fall through to weighing body.
+  const isDc = !ds && 'DCLogic' in window;
+  const settleRoot = ds || (isDc ? document.getElementById('dc-root') : null) || document.body;
+  if (settleRoot) {
+    // Weigh only content children — skip script/style/template so inline
+    // Babel/CSS doesn't register as stable "content" before the framework
+    // has mounted anything.
+    const MEDIA = 'img,svg,canvas,video,picture,iframe,embed,object';
+    const weigh = () => {
+      let text = 0, media = 0;
+      for (const c of settleRoot.children) {
+        const t = c.tagName;
+        if (t === 'SCRIPT' || t === 'STYLE' || t === 'TEMPLATE') continue;
+        text += (c.textContent || '').trim().length;
+        media += c.querySelectorAll(MEDIA).length + (c.matches(MEDIA) ? 1 : 0);
+      }
+      return text + media * 100;
+    };
+    // "Non-zero and stable" alone is not sufficient to mean rendered: generic
+    // body can carry a static shell while async main content is pending, and
+    // #dc-root can carry the root DC's static text while child refs are still
+    // .sc-placeholder boxes. Gate generic on readyState 'complete', and never
+    // accept stability while a dc-runtime placeholder is present.
+    const isGeneric = settleRoot === document.body;
+    const deadline = Date.now() + 15000;
+    let last = -1, stable = 0;
+    while (Date.now() < deadline) {
+      const n = weigh();
+      const ready =
+        (!isGeneric || document.readyState === 'complete') &&
+        !settleRoot.querySelector('.sc-placeholder');
+      if (n > 0 && n === last && ready) { if (++stable >= 2) break; } else { stable = 0; }
+      last = n;
+      await new Promise((r) => setTimeout(r, 250));
+    }
+  }
+  // Reveal content gated on scroll or visibility before printing. Lazy <img>,
+  // IntersectionObserver fade-ins, and collapsed <details> don't render while
+  // off-screen, so a long page would print with them blank or closed. Open
+  // every <details>, force native-lazy images eager, and scroll the document
+  // through its full height to trip lazy-load + IO; then wait (bounded) for the
+  // newly-triggered images. Inert for deck-stage (slides aren't scroll-gated).
+  try {
+    for (const d of document.querySelectorAll('details')) d.open = true;
+    for (const img of document.querySelectorAll('img[loading="lazy"]'))
+      img.loading = 'eager';
+    const scroller = document.scrollingElement || document.documentElement;
+    const full = Math.max(scroller.scrollHeight, document.body.scrollHeight);
+    const step = window.innerHeight || 800;
+    for (let y = 0; y <= full; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => requestAnimationFrame(r));
+    }
+    window.scrollTo(0, 0);
+    await Promise.race([
+      Promise.all(
+        [...document.images].map((img) =>
+          img.complete
+            ? null
+            : new Promise((res) => {
+                img.addEventListener('load', res, { once: true });
+                img.addEventListener('error', res, { once: true });
+              })
+        )
+      ),
+      new Promise((r) => setTimeout(r, 4000)),
+    ]);
+  } catch (e) {}
+  try { await document.fonts.ready; } catch (e) {}
+  // Jump every animation to its end state so print() never captures a slide
+  // mid-entrance. Ordering matters: the 0s-transition style must be live
+  // BEFORE data-deck-active is set so attribute-keyed transitions don't
+  // start a (now-0s) run from the pre-active base.
+  const st = document.createElement('style');
+  st.textContent = '*,*::before,*::after{animation-delay:-99s !important;animation-duration:.001s !important;animation-iteration-count:1 !important;animation-fill-mode:both !important;animation-play-state:running !important;transition-duration:0s !important}';
+  document.head.appendChild(st);
+  for (const d of document.querySelectorAll('deck-stage')) {
+    for (const c of d.children) {
+      const t = c.tagName;
+      if (t === 'SCRIPT' || t === 'STYLE' || t === 'TEMPLATE') continue;
+      c.setAttribute('data-deck-active', '');
+    }
+  }
+  // Re-append deck-stage's @page last so no author @page can add a margin and
+  // spill each full-bleed slide onto two sheets. Backstop for old copies.
+  if (ds) {
+    let pg = document.getElementById('deck-stage-print-page');
+    if (!pg) {
+      pg = document.createElement('style');
+      pg.textContent = '@page{size:' + (+ds.getAttribute('width') || 1920) +
+        'px ' + (+ds.getAttribute('height') || 1080) + 'px;margin:0}';
+    }
+    document.body.appendChild(pg);
+  }
+  try {
+    const sweep = () => {
+      for (const a of document.getAnimations()) {
+        try { a.finish(); } catch (e) {
+          try { a.currentTime = (a.effect && a.effect.getComputedTiming().duration) || 0; a.pause(); } catch (e2) {}
+        }
+      }
+    };
+    sweep();
+    await new Promise((r) => requestAnimationFrame(r));
+    sweep();
+    await new Promise((r) => requestAnimationFrame(r));
+  } catch (e) {}
+  // Relax break-inside on oversized elements. An element taller than a
+  // printable page can't honor break-inside: avoid — browsers either overflow
+  // it or push it whole to the next page, leaving a blank gap, then break it
+  // anyway at an arbitrary point. After the final layout (content revealed,
+  // animations jumped), find elements taller than a page that still compute
+  // break-inside: avoid and reset them to auto, so the browser breaks them at
+  // their children's boundaries instead (children keep their own avoid). PAGE_PX
+  // is a conservative portrait estimate at 96 CSS px/in — Letter/A4 usable
+  // height minus our 0.5in margins — so only clearly-oversized elements are
+  // touched and under-page elements still stay whole. Skipped for decks, whose
+  // slides are sized to the page.
+  try {
+    if (!document.querySelector('deck-stage')) {
+      const PAGE_PX = 1024;
+      // Our print defaults add a body padding inset only when we also zero the
+      // @page margin; computed style can't tell us (it reports screen media),
+      // so read the injected rule directly.
+      const defaults = document.querySelector('style[data-omelette-print-defaults]');
+      const pageInset = /body\s*\{[^}]*padding/.test(defaults ? defaults.textContent || '' : '');
+      const SEL = 'section,article,figure,table,pre,blockquote,[class~="card" i],[class~="page" i],[class~="sheet" i]';
+      for (const el of document.body.querySelectorAll(SEL)) {
+        if (el instanceof HTMLElement && el.offsetHeight > PAGE_PX) {
+          el.setAttribute('data-om-oversized', '');
+          // Fake-paged docs simulate sheets with over-tall break-after:page
+          // boxes; honoring the break spills half-blank pages and ends a
+          // colored box mid-sheet. Flow them, and (only when we own the page
+          // inset) drop the redundant padding/background via the rule below.
+          const cs = getComputedStyle(el);
+          if (cs.breakAfter === 'page' || cs.pageBreakAfter === 'always') {
+            el.setAttribute('data-om-fakepage', '');
+          }
+        }
+      }
+      const ost = document.createElement('style');
+      ost.textContent = '@media print{' +
+        '[data-om-oversized]{break-inside:auto !important;page-break-inside:auto !important}' +
+        '[data-om-fakepage]{break-after:auto !important;page-break-after:auto !important}' +
+        (pageInset ? '[data-om-fakepage]{padding:0 !important;background:none !important}' : '') +
+        '}';
+      document.head.appendChild(ost);
+    }
+  } catch (e) {}
+  // macOS Preview renders Skia-PDF Luminosity soft-masks as opaque grey boxes;
+  // swap the CSS that triggers them for Preview-safe forms.
+  try {
+    for (const el of document.body.querySelectorAll('*')) {
+      const cs = getComputedStyle(el);
+
+      if (cs.boxShadow !== 'none' && cs.filter === 'none') {
+        const outs = [], kept = [];
+        for (const s of cs.boxShadow.split(/,(?![^(]*[)])/)) {
+          const t = s.trim();
+          const m = t.match(/^(rgba?[(][^)]+[)]) (-?[0-9.]+px) (-?[0-9.]+px) ([0-9.]+px) -?[0-9.]+px$/);
+          if (m && parseFloat(m[4]) > 0) outs.push('drop-shadow(' + m[2] + ' ' + m[3] + ' ' + m[4] + ' ' + m[1] + ')');
+          else kept.push(t);
+        }
+        if (outs.length) {
+          el.style.setProperty('filter', outs.join(' '), 'important');
+          el.style.setProperty('box-shadow', kept.join(', ') || 'none', 'important');
+        }
+      }
+
+      const mask = cs.maskImage && cs.maskImage !== 'none' ? cs.maskImage : cs.webkitMaskImage;
+      if (mask && mask !== 'none' && cs.filter === 'none') el.style.setProperty('filter', 'opacity(1)', 'important');
+    }
+  } catch (e) {}
+  setTimeout(() => { try { window.print(); } catch (e) {} }, 200);
+})();
+</script>
+
+
+<div id="rm-highlighter-container" class="rm-reset-flex no-print">
+	<div id="rm-highlighter-menu" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 11px) !important; box-shadow: none !important; display: none;">
+		<!--
+			<div data-rm-action="clear-all" style="display:">Clear all</div>
+		-->
+	</div>
+	<div id="rm-highlighter-menu-update" style="filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 11px) !important; box-shadow: none !important;">
+	</div>
+
+	<div id="rm-highlighter-menu-list" style="display:none;">
+		<div class="rm-highlighter-menu-li rm-m-t-1" data-menu="highlight" data-menu-details="#rm-highlight-form">
+			<div id="rm-highlight-color-selected" class="rm-highlight-color" data-highlight-color="red" data-rm-action="select-color"></div>
+		</div>
+		<div class="rm-highlighter-menu-li" data-rm-action="view-selection" data-menu="view-selection">		
+			<div data-rm-img="view-selection" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/view-selection.svg"></div> 
+		</div>
+		<div class="rm-highlighter-menu-li" data-rm-action="tts-toggle-start-hm" data-menu="tts">
+			<div data-rm-img="play-round" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/play-round.svg"></div> 
+		</div>
+		<div class="rm-highlighter-menu-li" data-rm-action="google-translate" data-menu="google-translate">		
+			<div data-rm-img="google-translate" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/google-translate.svg"></div> 
+		</div>
+		<div class="rm-highlighter-menu-li" data-rm-action="tweet" data-menu="tweet">
+			<div data-rm-img="twitter" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/twitter.svg"></div> 
+		</div>	
+		<div class="rm-highlighter-menu-li" data-rm-action="open-page" data-page-name="options" data-menu="settings">
+			<div data-rm-img="settings" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/settings.svg"></div> 
+		</div>	
+	</div>
+
+	<div id="rm-highlighter-menu-details" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 2px 11px) !important; box-shadow: none !important;">
+		<div id="rm-highlight-form" class="rm-highlighter-menu-details" data-position-bottom="-200px" style="display:none">
+			<div class="rm-p-7 rm-p-b-1i">
+				<textarea id="rm-highlight-note" placeholder="Take a note..." autocomplete="off" spellcheck="false"></textarea>
+
+				<div id="rm-highlighter-colors" class="rm-m-t-4 rm-m-l-0">
+					<div class="rm-highlight-color rm-m-l-3i" data-rm-img="pencil" data-rm-img-ext="svg" data-rm-action="toggle-highlight-settings-iframe"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/pencil.svg"></div>
+				</div>
+			</div>
+
+			<div id="rm-highlight-form-footer" class="p-7">
+				<div id="rm-highlight-folder" data-rm-action="toggle-bookmark-iframe">
+					<div class="rm-display-inline-block" data-rm-img="folder" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/folder.svg"></div> 
+					<div class="rm-highlight-folder-name">Everything</div>
+				</div> 
+				<div class="btn-update btn-xs rm-btn rm-btn-light" data-rm-action="update" style="display:none">Update</div>
+			</div>	
+		</div>		
+	</div>	
+</div><div id="rm-toolbar" class="rm-toolbar rm-toolbar-dark rm-toolbar-expand rm-fixed-top no-print" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px -5px 15px) !important; box-shadow: none !important;">
+	<div class="rm-toolbar-nav rm-mr-auto no-print">
+		<div class="rm-toolbar-nav-logo rm-cursor-pointer" data-rm-img="icon" data-rm-img-ext="png" data-rm-action="redirect-to-home"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/png/icon.png"></div>
+
+      	<div class="rm-btn-group" role="group" style="display:none">
+			<div class="rm-btn rm-btn-sm btn-secondary" data-rm-action="tts-start">
+				<i class="fas fa-play"></i>
+			</div>
+			<div class="rm-btn rm-btn-sm btn-secondary" data-rm-action="tts-stop">
+				<i class="fas fa-stop"></i>
+			</div>
+		</div>
+    </div>
+
+	<div class="rm-ul rm-toolbar-nav rm-ml-auto">
+		<div class="rm-li tlite-tooltip" title="Listen">
+			<button type="button" class="rm-btn-nav rm-img-22 rm-m-t--1i" data-rm-img="headphones" data-rm-img-ext="svg" data-rm-action="tts-toggle-start"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/headphones.svg"></button>		
+		</div>		
+		<div class="rm-li tlite-tooltip" title="Edit">
+		  <button type="button" class="rm-btn-nav rm-img-20" data-rm-img="edit-text-file-2" data-rm-img-ext="svg" data-rm-action="editing-mode-start"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/edit-text-file-2.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Delete items">
+		  <button type="button" class="rm-btn-nav rm-img-21" data-rm-img="erase" data-rm-img-ext="svg" data-rm-action="deletion-mode-start"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/erase.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Translate" id="rm-translate-toggle" data-toggle="true" data-target="#rm-translate">
+		  <button type="button" class="rm-btn-nav" data-rm-img="translation" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/translation.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Print">
+		  <button type="button" class="rm-btn-nav" data-rm-img="print" data-rm-img-ext="svg" data-rm-action="print"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/print.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Scroll">
+		  <button type="button" class="rm-btn-nav rm-img" data-rm-img="scroll-down" data-rm-img-ext="svg" data-rm-action="autoscroll"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/scroll-down.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Settings" id="rm-main-settings-toggle" data-toggle="true" data-target="#rm-main-settings">
+		    <button type="button" class="rm-btn-nav" data-rm-img="tune" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/tune.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Save Bookmark">
+		  <button type="button" class="rm-btn-nav" data-rm-img="bookmark-2" data-rm-img-ext="svg" data-rm-job="toggle-iframe" data-rm-params="{&quot;iframe_name&quot;:&quot;bookmark&quot;}"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/bookmark-2.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Fullscreen">
+		  <button type="button" class="rm-btn-nav" data-rm-action="fullscreen-toggle" data-rm-img="expand" data-rm-img-ext="svg"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/expand.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Close [ESC]">
+		  <button type="button" class="rm-btn-nav" data-rm-img="close" data-rm-img-ext="svg" data-rm-job="hide-iframe" data-rm-params="{&quot;iframe_name&quot;:&quot;reader&quot;}"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/close.svg"></button>
+		</div>
+	</div>
+
+	<div id="rm-toolbar-toggle" class="rm-cursor-pointer" style="filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 2px 2px) !important; box-shadow: none !important;">
+		<i class="fas fa-chevron-up"></i>
+	</div>	
+</div>
+
+<div id="rm-toolbar-tts" class="rm-toolbar rm-toolbar-dark rm-toolbar-expand rm-fixed-top no-print" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px -5px 15px) !important; box-shadow: none !important;">
+	<div class="rm-toolbar-nav rm-mr-auto no-print">
+		<div class="rm-tts-wave" style="display:">
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		</div>
+
+		<div class="rm-tts-wave-active" style="display:none">
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		    <span class="rm-tts-wave-stroke"></span>
+		</div>
+	</div>
+		
+	<div class="rm-ul rm-toolbar-nav rm-toolbar-nav-center rm-ml-auto">
+		<div class="rm-li tlite-tooltip" title="Previous">
+			<button type="button" class="rm-btn-nav rm-img-20" data-rm-img="skip-to-start" data-rm-img-ext="svg" data-rm-action="tts-previous"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/skip-to-start.svg"></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Play/Pause">
+			<button type="button" class="rm-btn-nav rm-img-20" data-rm-img="play" data-rm-img-ext="svg" data-rm-action="tts-start"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/play.svg"></button>
+			<button type="button" class="rm-btn-nav rm-img-20" data-rm-img="pause" data-rm-img-ext="svg" data-rm-action="tts-stop" style="display:none"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/pause.svg"></button>
+		</div>	
+		<div class="rm-li tlite-tooltip" title="Forward">
+			<button type="button" class="rm-btn-nav rm-img-20" data-rm-img="end" data-rm-img-ext="svg" data-rm-action="tts-forward"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/end.svg"></button>
+		</div>	
+	</div>	
+
+	<div class="rm-ul rm-toolbar-nav rm-ml-auto">
+		<div class="rm-li">
+			<button type="button" class="rm-btn-nav rm-img-20" data-rm-img="audio" data-rm-img-ext="svg" data-rm-img-classes="rm-float-left rm-m-t-2 rm-m-r-2" data-rm-action="tts-settings"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/audio.svg" class="rm-float-left rm-m-t-2 rm-m-r-2"><span class="rm-m-l-5 rm-btn-nav-text rm-display-inline-block rm-float-left">Voice options</span></button>
+		</div>
+		<div class="rm-li tlite-tooltip" title="Close TTS">
+		  <button type="button" class="rm-btn-nav" data-rm-img="close" data-rm-img-ext="svg" data-rm-action="tts-toggle-stop"><img src="chrome-extension://llimhhconnjiflfimocjggfjdlmlhblm/img/svg/close.svg"></button>
+		</div>
+	</div>	
+</div>	
+
+<div id="rm-main-settings" class="rm-toolbar-aside" data-toggle-target="true" data-parent="#rm-main-settings-toggle" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;">
+	<div class="rm-accordion">
+	  	<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-text-settings">
+		    	<span class="rm-m-l--3 rm-m-r-3"><b>Aa</b></span> TYPOGRAPHY
+		    </div>
+		    <div id="rm-text-settings" class="rm-card-body show" data-parent="#rm-main-settings">
+				<label class="rm-label">Font</label>
+				<select class="custom-select rm-custom-select rm-border-0i" name="font_family" data-css="true" data-css-elem="*">
+					<option value="arial">Arial</option>
+					<option value="arial black">Arial Black</option>
+					<option value="athelas">Athelas</option>
+					<option value="comic sans ms">Comic Sans MS</option>
+					<option value="courier new">Courier New</option>
+					<option value="courier">Courier</option>
+					<option value="didot">Didot</option>
+					<option value="georgia">Georgia</option>
+					<option value="gill sans">Gill Sans</option>
+					<option value="helvetica" selected="">Helvetica</option>
+					<option value="impact">Impact</option>
+					<option value="iowan old style">Iowan Old Style</option>
+					<option value="palatino">Palatino</option>
+					<option value="optima">Optima</option>
+					<option value="sans-serif">Sans-serif</option>
+					<option value="sassoon-primary">Sassoon Primary</option>
+					<option value="seravek">Seravek</option>
+					<option value="serif">Serif</option>
+					<option value="times new roman">Times New Roman</option>
+					<option value="trebuchet ms">Trebuchet MS</option>
+					<option value="opendyslexic">OpenDyslexic</option>
+					<option value="opendyslexic-mono">OpenDyslexic Mono</option>
+					<option value="opendyslexic-bold">OpenDyslexic Bold</option>
+					<option value="opendyslexic-italic">OpenDyslexic Italic</option>
+					<option value="opendyslexic-bold-italic">OpenDyslexic BoldItalic</option>
+					<option value="lexend-deca">LexendDeca</option>
+					<option value="lexend-exa">Lexend Exa</option>
+					<option value="lexend-giga">Lexend Giga</option>
+					<option value="lexend-mega">Lexend Mega</option>
+					<option value="lexend-peta">Lexend Peta</option>
+					<option value="lexend-tera">Lexend Tera</option>
+					<option value="lexend-zetta">Lexend Zetta</option>
+					<option value="lexie-readable">LexieReadable</option>
+					<option value="lexie-readable-bold">LexieReadable Bold</option>
+					<option value="lora">Lora</option>
+					<option value="lora-bold">Lora Bold</option>
+					<option value="lora-italic">Lora Italic</option>
+					<option value="lora-bold-italic">Lora BoldItalic</option>
+					<option value="verdana">Verdana</option>
+				</select>
+
+				<label class="rm-label rm-m-t-22 rm-m-b-12">Text Align</label>
+				<table id="rm-text-align" class="rm-full-width">
+					<tbody><tr>
+						<td class="rm-width-15 active">
+							<i class="fas fa-align-left"></i> <br>
+							<input type="radio" name="text_align" data-css="true" data-css-elem="*" value="left" checked="checked" style="display:none">
+						</td>
+						<td class="rm-width-15">
+							<i class="fas fa-align-center"></i> <br>
+							<input type="radio" name="text_align" data-css="true" data-css-elem="*" value="center" style="display:none">
+						</td>	
+						<td class="rm-width-15">
+							<i class="fas fa-align-right"></i> <br>
+							<input type="radio" name="text_align" data-css="true" data-css-elem="*" value="right" style="display:none">
+						</td>	
+						<td>
+							<i class="fas fa-align-justify"></i> <br>
+							<input type="radio" name="text_align" data-css="true" data-css-elem="*" value="justify" style="display:none">
+						</td>	
+					</tr>		
+				</tbody></table>	
+
+				<label class="rm-label rm-m-t-22 rm-m-b-12">Text Size</label>
+				<div class="rm-range-control">
+				    <input type="range" name="font_size" data-css="true" data-css-elem="*" data-css-postfix="px" min="12" max="100" step="1" value="19" data-thumbwidth="19">
+				    <output name="rangeVal">19</output>
+			  	</div>
+
+			  	<label class="rm-label rm-m-t-22 rm-m-b-12">Line Height</label>
+				<div class="rm-range-control">
+				    <input type="range" name="line_height" data-css="true" data-css-elem="*" data-css-postfix="px" min="10" max="100" step="1" value="30" data-thumbwidth="30">
+				    <output name="rangeVal">30</output>
+			  	</div>
+
+			  	<label class="rm-label rm-m-t-25 rm-m-b-12">Letter Spacing</label>
+				<div class="rm-range-control">
+				    <input type="range" name="letter_spacing" data-css="true" data-css-elem="*" data-css-postfix="px" min="0" max="10" step="0.1" value="0.2" data-thumbwidth="0.2">
+				    <output name="rangeVal">0.2</output>
+			  	</div>
+
+			  	<label class="rm-label rm-m-t-25 rm-m-b-12">Width</label>
+				<div class="rm-range-control">
+				    <input type="range" name="width" data-elem="#rm-article" data-css="true" data-css-postfix="px" min="100" max="1280" step="10" value="680" data-thumbwidth="100">
+			  	</div>	
+
+			  	<div class="rm-m-t-25 rm-m-b-10">
+		        	<button class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="save" data-rm-loading="Saving" data-rm-alert="Saved!">Save</button>
+		    	</div>
+		    </div>
+	  	</div>
+	  	<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-themes-settings">
+		        <i class="fas fa-swatchbook rm-m-r-5"></i> THEMES
+		    </div>
+			<div id="rm-themes-settings" class="rm-card-body rm-p-b-7i" data-parent="#rm-main-settings">
+			  	<label class="rm-label rm-m-t-10">Current Theme <button class="rm-btn rm-btn-light btn-delete rm-btn-xxs rm-m-t--1 rm-m-l-3" style="display:none;">Delete</button></label>
+			  	<!--<input type="text" name="themes" class="form-control"/>-->
+			  	<div class="rm-ul rm-list-unstyled rm-list-inline rm-m-b-15">
+			  		<div name="theme" data-value="custom" class="rm-li rm-list-inline-item tooltip-s" title="Add custom theme" data-toggle="true" data-target="#rm-new-theme" style="filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;"></div>
+			  	</div>
+
+			  	<div id="test">
+			  	</div>	
+
+			  	
+
+			  	<p>
+		        	<small>
+		        		To change the extension and app theme, go to the
+		        		<a href="https://0e838931-90ef-48a8-bbc2-f091f4e7fc82.claudeusercontent.com/v1/design/projects/0e838931-90ef-48a8-bbc2-f091f4e7fc82/serve/Health%20Value%20Engine-print-156xyrq.dc.html?t=38067d973a43394273fd1072b66aac2b72af23926094256e0484728ba38163d5.b4626cef-dec7-42b7-b762-57d41ec53404.ced4c017-c732-40f8-bd26-1483f9676b61.1781846950&amp;direct=1#/" data-rm-action="open-page" data-page-name="options" class="rm-color-primary-i">
+		        			<b>Settings page <i class="fas fa-external-link-square-alt"></i></b>
+		        		</a> 
+		        	</small>
+		        </p> 						
+			</div>
+	  	</div>
+	 	<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-display-settings">
+		        <i class="fas fa-toggle-on rm-m-r-5"></i> DISPLAY
+		    </div>
+			<div id="rm-display-settings" class="rm-card-body" data-parent="#rm-main-settings">
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="rm_article_outline" data-toggle="true" data-elem-prefix="#"> 
+					<span>Outline</span>
+				</label>
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="img" data-toggle="true" checked=""> 
+					<span>Images</span>
+				</label>
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="rm_article_meta" data-toggle="true" data-elem-prefix="#" checked=""> 
+					<span>Meta</span> 
+				</label>
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="rm_article_author" data-toggle="true" data-elem-prefix="#" checked=""> 
+					<span>Author</span> 
+				</label>
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="rm_article_reading_time" data-toggle="true" data-elem-prefix="#" checked=""> 
+					<span>Reading Time</span> 
+				</label>
+				<label class="rm-label rm-label-isolate">
+					<input type="checkbox" class="rm-m-r-3" name="rm_article_source" data-toggle="true" data-elem-prefix="#" checked=""> 
+					<span>Source URL</span> 
+				</label>
+
+				<div class="rm-m-t-10 rm-m-b-10 rm-m-l-6">
+		        	<div class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="save" data-rm-loading="Saving" data-rm-alert="Saved!">Save</div>
+		    	</div>
+			</div>
+	  	</div>
+		<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-dyslexia-ruler-settings">
+		    	<i class="fas fa-ruler-horizontal rm-m-r-5"></i> READING RULER
+		    </div>
+		    <div id="rm-dyslexia-ruler-settings" class="rm-card-body" data-parent="#rm-main-settings">
+		        <label class="rm-label rm-label-isolate">
+	      			<input type="checkbox" class="rm-m-r-3" name="rm_reading_ruler" data-toggle="true" data-elem-prefix="#"> 
+	      			<span>Display Ruler</span>
+	      		</label>
+
+	      		<table class="rm-m-t-10">
+			  		<tbody><tr>
+			  			<td class="rm-p-r-10">Color</td>
+			  			<td>
+			  				<input type="color" name="reading_ruler_bg_color" data-css="true" data-css-attr="background-color" data-elem="#rm-reading-ruler" value="#ADADAD">
+			  			</td>
+			  		</tr>	
+			  	</tbody></table>
+
+			  	<label class="rm-label rm-m-t-20">Opacity</label>
+				<div class="rm-range-control rm-m-b-10">
+				    <input type="range" name="reading_ruler_opacity" data-elem="#rm-reading-ruler" data-css="true" data-css-attr="opacity" min="0.1" max="1" step="0.1" value="0.5" data-thumbwidth="0.5">
+				    <output name="rangeVal">0.5</output>
+			  	</div>
+
+				<label class="rm-label rm-m-t-15">Height</label>
+				<div class="rm-range-control">
+				    <input type="range" name="reading_ruler_height" data-elem="#rm-reading-ruler" data-css="true" data-css-attr="height" data-css-postfix="px" min="10" max="250" step="2" value="40" data-thumbwidth="40">
+				    <output name="rangeVal">40</output>
+			  	</div>
+
+			  	<label class="rm-label rm-m-t-20">Position</label>
+				<div class="rm-range-control rm-m-b-10">
+				    <input type="range" name="reading_ruler_top" data-elem="#rm-reading-ruler" data-css="true" data-css-attr="top" data-css-postfix="%" min="10" max="90" step="5" value="45" data-thumbwidth="45">
+				    <output name="rangeVal">45</output>
+			  	</div>
+
+			  	<div class="rm-m-t-25 rm-m-b-10">
+		        	<div class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="save" data-rm-loading="Saving" data-rm-alert="Saved!">Save</div>
+		    	</div>
+		    </div>
+		</div>
+	  	<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-auto-run-rules">
+		    	<span class="rm-m-r-5"><i class="fas fa-globe rm-m-r-1"></i></span> AUTO-RUN RULES 
+		    	<span class="rm-pill rm-pill-premium rm-m-l-5" data-rm-action="upgrade"><small>PREMIUM</small></span>
+		    </div>
+		    <div id="rm-auto-run-rules" class="rm-card-body" data-parent="#rm-main-settings">
+		        <textarea name="auto_run_rules" class="rm-form-control rm-textarea rm-m-b-10i" rows="5" spellcheck="false" placeholder="Add regex expressions here (seperated by commas)" readonly=""></textarea>
+
+		        <p>
+		        	<small>
+		        		Automatically activate Reader Mode on specific websites by using regex. 
+		        		<a href="https://readermode.io/features/auto-run" target="_blank" class="rm-color-primary-i">
+		        			<b>Learn more <i class="fas fa-external-link-square-alt"></i></b>
+		        		</a> 
+		        	</small>
+		        </p> 
+
+		        <div class="rm-m-t-10 rm-m-b-10">
+		        	<div class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="save" data-rm-loading="Saving">Save</div>
+		    	</div>
+		    </div>
+	  	</div>		
+	  	<div class="rm-card">
+		    <div class="rm-card-header rm-hover-brightness" data-target="#rm-custom-css-settings">
+		    	<span class="rm-m-r-5">{ }</span> CUSTOM CSS 
+		    	<span class="rm-pill rm-pill-premium rm-m-l-5" data-rm-action="upgrade"><small>PREMIUM</small></span>
+		    </div>
+		    <div id="rm-custom-css-settings" class="rm-card-body" data-parent="#rm-main-settings">
+		        <textarea name="custom_css" class="rm-form-control rm-textarea rm-m-b-10i" rows="5" spellcheck="false" placeholder="Add your custom css..." readonly=""></textarea>
+		        <div>
+		        	<input type="checkbox" class="rm-m-r-3" name="use_custom_css" checked="" disabled=""> Use custom css
+		    	</div>
+
+		        <p>
+		        	<small>
+		        		Add your own CSS to customize the article's layout or design
+		        		<a href="https://help.readermode.io/using-reader-mode/custom-css" target="_blank" class="rm-color-primary-i">
+		        			<b>Learn more <i class="fas fa-external-link-square-alt"></i></b>
+		        		</a> 
+		        	</small>
+		        </p> 
+
+		        <div class="rm-m-t-10 rm-m-b-10">
+		        	<div class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="save" data-rm-loading="Saving">Save</div>
+		    	</div>
+		    </div>
+	  	</div>
+	</div>
+</div>
+
+<div id="rm-translate" class="rm-toolbar-aside" data-toggle-target="true" data-parent="#rm-translate-toggle" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;">
+	<div class="rm-card">
+	    <div class="rm-card-header">
+	    	<i class="fas fa-language rm-m-r-5"></i> TRANSLATE
+	    </div>
+	    <div class="rm-card-body">
+			<label class="rm-label rm-display-block rm-m-b-10">Default translation language:</label>
+			<select class="custom-select rm-custom-select rm-border-0i" name="default_translation_language">
+				<option value="af">🇿🇦 Afrikaans</option>
+				<option value="sq">🇦🇱 Albanian</option>
+				<option value="ar">🇸🇦 Arabic</option>
+				<option value="az">🇦🇿 Azerbaijani</option>
+				<option value="eu">🏴󠁥󠁳󠁰󠁶󠁿 Basque</option>
+				<option value="bn">🇧🇩 Bengali</option>
+				<option value="be">🇧🇾 Belarusian</option>
+				<option value="bg">🇧🇬 Bulgarian</option>
+				<option value="ca">🏴󠁥󠁳󠁰󠁶󠁿 Catalan</option>
+				<option value="zh-CN">🇨🇳 Chinese Simplified</option>
+				<option value="zh-TW">🇨🇳 Chinese Traditional</option>
+				<option value="hr">🇭🇷 Croatian</option>
+				<option value="cs">🇨🇿 Czech</option>
+				<option value="da">🇩🇰 Danish</option>
+				<option value="nl">🇳🇱 Dutch</option>
+				<option value="en" selected="">🇬🇧 English</option>
+				<option value="eo">🏴󠁥󠁳󠁰󠁶󠁿 Esperanto</option>
+				<option value="et">🇪🇪 Estonian</option>
+				<option value="tl">🇵🇭 Filipino</option>
+				<option value="fi">🇫🇮 Finnish</option>
+				<option value="fr">🇫🇷 French</option>
+				<option value="gl">🇪🇸 Galician</option>
+				<option value="ka">🇬🇪 Georgian</option>
+				<option value="de">🇩🇪 German</option>
+				<option value="el">🇬🇷 Greek</option>
+				<option value="gu">🇮🇳 Gujarati</option>
+				<option value="ht">🇭🇹 Haitian Creole</option>
+				<option value="iw">🇮🇱 Hebrew</option>
+				<option value="hi">🇮🇳 Hindi</option>
+				<option value="hu">🇭🇺 Hungarian</option>
+				<option value="is">🇮🇸 Icelandic</option>
+				<option value="id">🇮🇩 Indonesian</option>
+				<option value="ga">🇮🇪 Irish</option>
+				<option value="it">🇮🇹 Italian</option>
+				<option value="ja">🇯🇵 Japanese</option>
+				<option value="kn">🇮🇳 Kannada</option>
+				<option value="ko">🇰🇷 Korean</option>
+				<option value="la">🏴󠁥󠁳󠁰󠁶󠁿 Latin</option>
+				<option value="lv">🇱🇻 Latvian</option>
+				<option value="lt">🇱🇹 Lithuanian</option>
+				<option value="mk">🇲🇰 Macedonian</option>
+				<option value="ms">🇲🇾 Malay</option>
+				<option value="mt">🇲🇹 Maltese</option>
+				<option value="no">🇳🇴 Norwegian</option>
+				<option value="fa">🇮🇷 Persian</option>
+				<option value="pl">🇵🇱 Polish</option>
+				<option value="pt">🇵🇹 Portuguese</option>
+				<option value="ro">🇷🇴 Romanian</option>
+				<option value="ru">🇷🇺 Russian</option>
+				<option value="sr">🇷🇸 Serbian</option>
+				<option value="sk">🇸🇰 Slovak</option>
+				<option value="sl">🇸🇮 Slovenian</option>
+				<option value="es">🇪🇸 Spanish</option>
+				<option value="sw">🏴󠁥󠁳󠁰󠁶󠁿 Swahili</option>
+				<option value="sv">🇸🇪 Swedish</option>
+				<option value="ta">🇮🇳 Tamil</option>
+				<option value="te">🇮🇳 Telugu</option>
+				<option value="th">🇹🇭 Thai</option>
+				<option value="tr">🇹🇷 Turkish</option>
+				<option value="uk">🇺🇦 Ukrainian</option>
+				<option value="ur">🇵🇰 Urdu</option>
+				<option value="vi">🇻🇳 Vietnamese</option>
+				<option value="cy">🇬🇧 Welsh</option>
+				<option value="yi">🇮🇱 Yiddish</option>
+			</select>	
+
+			<div class="rm-m-t-10 rm-m-b-10">
+				<div class="rm-btn rm-btn-light rm-btn-save rm-btn-xs rm-m-r-5 rm-p-l-10i rm-p-r-10i" data-rm-loading="Setting" data-rm-alert="Set!">Set</div>
+				<div class="rm-btn rm-btn-primary rm-btn-save rm-btn-xs" data-rm-action="translate">Translate</div>
+			</div>
+	    </div>
+	</div>	
+</div>
+
+<div id="rm-deletion-mode" class="rm-toolbar-aside" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;">
+	<div class="rm-card">
+	    <div class="rm-card-body text-center rm-p-0i rm-p-t-5i rm-p-b-5i">
+	   		<center>
+	   			<a href="https://0e838931-90ef-48a8-bbc2-f091f4e7fc82.claudeusercontent.com/v1/design/projects/0e838931-90ef-48a8-bbc2-f091f4e7fc82/serve/Health%20Value%20Engine-print-156xyrq.dc.html?t=38067d973a43394273fd1072b66aac2b72af23926094256e0484728ba38163d5.b4626cef-dec7-42b7-b762-57d41ec53404.ced4c017-c732-40f8-bd26-1483f9676b61.1781846950&amp;direct=1#/" class="rm-deletion-mode-undo rm-m-r-10" title="Undo" style="display:none">
+	        		<i class="fas fa-undo"></i> 
+	        	</a>
+
+		        <div class="rm-btn rm-btn-xs rm-btn-light rm-p-l-25i rm-p-r-25i rm-m-r-3">Cancel</div>
+		        <div class="rm-btn rm-btn-xs rm-btn-primary rm-p-l-30i rm-p-r-30i">Save</div>
+	    	</center>
+	    </div>
+	</div>	
+</div>
+
+<div id="rm-editing-mode" class="rm-toolbar-aside" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;">
+	<div class="rm-card">
+	    <div class="rm-card-body text-center rm-p-0i rm-p-t-5i rm-p-b-5i">
+	    	<center>
+		        <div class="rm-btn rm-btn-xs rm-btn-light rm-p-l-25i rm-p-r-25i rm-m-r-3">Cancel</div>
+		        <div class="rm-btn rm-btn-xs rm-btn-primary rm-p-l-30i rm-p-r-30i">Save</div>
+	    	</center>
+	    </div>
+	</div>	
+</div>
+
+<div id="rm-reading-ruler" class="no-print" style="display:none">
+</div>
+
+<div id="rm-article-outline" class="rm-toolbar-aside" style="display: none; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 10px) !important; box-shadow: none !important;">
+	<div class="rm-card">
+	    <div class="rm-card-header">
+	    	<i class="fas fa-list-ul rm-m-r-5"></i> OUTLINE
+	    	<i class="fas fa-chevron-up rm-card-body-toggle rm-float-right rm-m-t-1"></i>
+	    </div>
+	    <div class="rm-card-body">
+	        <div class="rm-ul rm-list-unstyled rm-m-b-5">
+	        </div>	
+	    </div>
+	</div>	
+</div>
+
+</body></html>
